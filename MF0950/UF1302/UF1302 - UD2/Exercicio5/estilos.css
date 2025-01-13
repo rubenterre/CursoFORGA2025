@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+section {
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+}
+
+section h1{
+    padding-top: 80px;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+}
