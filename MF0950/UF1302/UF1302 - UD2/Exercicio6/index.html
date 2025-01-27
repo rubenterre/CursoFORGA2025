@@ -1,42 +1,74 @@
 <!DOCTYPE html>
-<html lang="gl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 6</title>
-</head>
-<body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo de Página Web</title>
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#services">Servizos</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="services">
-            <article>
-                <h2>Titulo do artigo</h2>
-                <p>Descrición do artigo</p>
-            </article>
-            <aside>
-                <ul>
-                    <li><a href="">Enlaces</a></li>
-                    <li><a href="">Enlaces</a></li>
-                    <li><a href="">Enlaces</a></li>
-                </ul>
-            </aside>
-        </section>
-        
-    </main>
-    <footer id="contact">
+      <h1>Mi Página Web Semántica</h1>
+      <nav>
         <ul>
-            <li><a href="tel:+34678934569">Teléfono: 678934569</a></li>
-            <li><a href="mailto:info@rubenterre.com">Email: info@rubenterre.com</a></li>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Acerca de</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Contacto</a></li>
         </ul>
-        <p>Todos os dereitos reservados - Rubén Terré</p>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Acerca de Nosotros</h2>
+        <p>Somos una empresa dedicada a brindar soluciones web.</p>
+      </section>
+
+      <section>
+        <h2>Nuestros Servicios</h2>
+        <ul>
+          <li>Diseño Web</li>
+          <li>Desarrollo de Aplicaciones</li>
+          <li>Marketing en Línea</li>
+        </ul>
+      </section>
+
+      <section>
+        <img src="imagen.jpg" alt="Una imagen descriptiva" />
+
+        <video controls>
+          <source src="video.mp4" type="video/mp4" />
+          Tu navegador no soporta el elemento de video.
+        </video>
+
+        <audio controls>
+          <source src="audio.mp3" type="audio/mpeg" />
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+
+        <iframe
+          src="https://www.youtube.com/embed/TU_VIDEO_ID"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </section>
+    </main>
+
+    <aside>
+      <h2>Noticias Recientes</h2>
+      <ul>
+        <li><a href="#">Nueva Actualización de Software</a></li>
+        <li><a href="#">Evento de Lanzamiento</a></li>
+        <li><a href="#">Ofertas Especiales</a></li>
+      </ul>
+    </aside>
+
+    <footer>
+      <h3>Contacto</h3>
+      <address>
+        <p>123 Calle Principal</p>
+        <p>Ciudad, País</p>
+      </address>
     </footer>
-</body>
+  </body>
 </html>

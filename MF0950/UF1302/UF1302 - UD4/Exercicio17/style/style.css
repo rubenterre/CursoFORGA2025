@@ -1,0 +1,22 @@
+body {
+ color: black;
+ -webkit-font-smoothing: antialiased;
+ margin: 40px;
+}
+
+body, input, button {
+ font-size: 14px;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+ cursor: pointer;
+}
+
+/* Estilos xerais */
+
+.resaltar{
+    background-color: black;
+    color: white;
+    font-weight: 900;
+}
