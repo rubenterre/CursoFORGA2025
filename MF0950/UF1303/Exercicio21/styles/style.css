@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: rgb(25, 139, 58);
+ color: black;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 14px;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+ cursor: pointer;
+}
+
+/* Estilos xerais */
+
+h1{
+    color: aliceblue;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.item{
+    color: brown;
+}
+
+footer{
+    border: 1px solid white;
+}

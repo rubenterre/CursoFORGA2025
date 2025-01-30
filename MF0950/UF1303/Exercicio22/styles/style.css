@@ -1,0 +1,21 @@
+.caixa {
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.vermello {
+    background-color: red;
+    color: white;
+}
+
+.azul {
+    background-color: blue;
+    color: white;
+}
+
+.verde {
+    background-color: green;
+    color: white;
+}

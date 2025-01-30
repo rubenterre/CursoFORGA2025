@@ -1,0 +1,70 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(./fonts/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+
+:root{
+    --color-primary: yellow;
+    --font-primary: Roboto;
+    --font-secundary: Poppins;
+}
+
+body {
+ background: var(--color-primary);
+ color: var(--color-primary);
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 14px;
+ font-family: var(--font-primary);
+}
+
+button {
+ cursor: pointer;
+}
+
+/* Estilos Xerais */
+
+body {
+    font-family: Arial, sans-serif; /* Establece a tipografía principal e alternativas */
+    background-color: #f0f0f0; /* Define a cor de fondo da páxina */
+    margin: 0; /* Elimina as marxes predeterminadas do corpo */
+    padding: 20px; /* Engade un recheo interior de 20 píxeles */
+}
+
+h1 {
+    color: #2c3e50; /* Define a cor do texto do título */
+    text-align: center; /* Centra o texto do título */
+    font-size: 1rem;
+}
+
+ul {
+    list-style-type: none; /* Elimina os marcadores predeterminados da lista */
+    padding: 0; /* Elimina o recheo predeterminado da lista */
+}
+
+li {
+    background-color: #3498db;
+    color: var(--color-primary);
+    margin: 10px 0; /* Engade unha marxe vertical de 10 píxeles entre elementos */
+    padding: 10px;
+    border-radius: 5px; /* Arredonda as esquinas con un radio de 5 píxeles */
+}
+
+li:hover {
+    background-color: #2980b9; /* Cambia a cor de fondo ao pasar o rato */
+}
