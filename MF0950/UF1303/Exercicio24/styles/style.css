@@ -27,7 +27,7 @@ button {
 /* Estilos xerais */
 
 h2{
-    color: white;
+    color: rgb(221, 221, 23);
     text-transform: uppercase;
     padding: 20px 0px;
     text-decoration: underline;
@@ -54,10 +54,11 @@ h2{
 }
 
 #fresas{
-    background: url(../assets/fresas.webp);
+    background-image: url('../assets/fresas.webp');
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: border-box;
 }
 
 #fresas:hover{
@@ -75,6 +76,8 @@ h2{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: rgb(194, 178, 60);
+    background-blend-mode: multiply;
 }
 
 #uvas{

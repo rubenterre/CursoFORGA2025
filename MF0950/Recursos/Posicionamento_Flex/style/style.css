@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: gray;
+ color: white;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 14px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+ cursor: pointer;
+}
+
+/* Estilos para posicionamento flex */
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.esquerda{
+    height: 200px;
+    background-color: blueviolet;
+    flex-shrink: 2;
+}
+
+.centro{
+    height: 300px;
+    background-color: brown;
+    flex-grow: 2;
+}
+
+.dereita{
+    height: 100px;
+    flex-grow: 1;
+    background-color: rgb(80, 155, 6);
+}
+
+.footer{
+    background-color: black;
+}

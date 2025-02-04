@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: gray;
+ color: white;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 14px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+ cursor: pointer;
+}
+
+/* Estilos para float */
+
+.contenedor{
+    width: 100%;
+}
+
+.caixa{
+    height: 300px;
+}
+
+.esquerda{
+    float: left;
+    width: 25%;
+    background-color: blueviolet;
+}
+
+.centro{
+    float: left;
+    width: 50%;
+    background-color: brown;
+}
+
+.dereita{
+    float: right;
+    width: 25%;
+    background-color: rgb(80, 155, 6);
+}
+
+.footer{
+    background-color: black;
+    clear: both;
+}

@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: gray;
+ color: white;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 14px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+ cursor: pointer;
+}
+
+/* Estilos xeriais */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+
+.column {
+    height: 300px;
+    padding: 20px;
+    }
+
+.left{
+    float: left;
+    width: 25%;
+    background-color: rgb(226, 84, 13);
+}
+
+.center{
+    float: left;
+    width: 50%;
+    background-color: blue;
+}
+
+.right{
+    float: right;
+    width: 25%;
+    background-color: blueviolet;
+}
+
+.footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        clear: both;
+    }
