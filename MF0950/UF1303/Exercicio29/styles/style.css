@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+:root{
+    --color-primary:#006fff;
+    --color-secondary: #062865;
+    --color-terthiary: #ebf8ff;
+}
+
+body {
+ background: var(--color-primary);
+ color: var(--color-secondary);
+}
+
+body, input, button {
+ font-size: 14px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+ cursor: pointer;
+}
+
+/* Estilos xerais */
+
+/* Header */
+
+.header__ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    list-style: none;
+}
+
+.header__a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* Main */
+
+
+.main{
+    background: var(--color-terthiary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 10px 0px;
+}
+
+.tarxeta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    flex-basis: 250px;
+    height: 300px;
+    gap: 20px;
+    padding: 10px;
+    border: 1px solid var(--color-secondary);
+    box-shadow: 2px 2px 5px gray;
+}
+
+.tarxeta__img{
+    width: 150px;
+}
+
+/* Footer */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}

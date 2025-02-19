@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: var(--color-primary);
+ color: var(--color-texto);
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 14px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+ cursor: pointer;
+}
+
+:root{
+    --color-primary: #41c699;
+    --color-secondary: #0d5845;
+    --color-terthiary: #062821;
+    --color-texto: white; 
+}
+
+/* Estilos por defecto */
+
+.header{
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--color-secondary);
+}
+
+.header__ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    list-style: none;
+}
+
+.header__a{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-texto);
+    text-decoration: none;
+}
+
+.header__a:hover{
+    text-decoration: underline double;
+}
+
+/* Main */
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    height: 100vh;
+}
+
+.servizos{
+    flex-grow: 1;
+    padding: 20px;
+    background-color: var(--color-terthiary);
+}
+
+.aside{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 20px;
+    flex-grow: 4;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: var(--color-secondary);
+}
+

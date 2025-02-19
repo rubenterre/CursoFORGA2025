@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: gray;
+ color: white;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 14px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+ cursor: pointer;
+}
+
+/* Estilos GRID */
+
+/* Estilos con grid template */
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+/*  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ */
+}
+
+header{
+  background-color: blue;
+  grid-column: span 4;
+}
+
+main{
+  background-color: blueviolet;
+  grid-column: span 3;
+}
+
+aside{
+  background-color: brown;
+  grid-column-start: 4;
+}
+
+footer{
+  background-color: green;
+  grid-column: span 4;
+}
+
+
+/* Estilos con grid areas */
+
+
+/* body{
+  height: 100vh;
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "main main aside"
+    "footer footer footer";
+}
+
+header{
+background-color: blue;
+grid-area: header;
+}
+
+main{
+background-color: blueviolet;
+grid-area: main;
+}
+
+aside{
+background-color: brown;
+grid-area: aside;
+}
+
+footer{
+background-color: green;
+grid-area: footer;
+} */
+
+/* Responsive Grid */
+
+/* auto-fill enche o espazo en función do contido e pasa a fila de abaixo se non lle chega */
+.grid-container--fill {
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+/* auto-fit enche todo o espazo da fila e pasa á fila de abaixo se non lle chega */
+
+.grid-container--fit {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}

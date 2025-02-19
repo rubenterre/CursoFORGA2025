@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "SergioRegular";
+    src: url(./fonts/SergioTrendy_Regular.ttf);
+}
+
+:root{
+    --color-primary: #ee5335;
+    --color-secondary: #f9a7bf;
+    --color-terthiary: #414042;
+    --font-primary: "SergioRegular";
+    --font-secondary: "Times New Roman";
+}
+
+body {
+ margin: 20px;
+ background: white;
+ color: white;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 14px;
+ font-family: var(--font-secondary);
+}
+
+button {
+ cursor: pointer;
+}
+
+/* Estilos grid - Bento design */
+
+.container{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+        "item1 item1 item2 item2"
+        "item1 item1 item3 item4";
+/*     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ */
+}
+
+.item1{
+    background-color: var(--color-primary);
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    grid-area: item1;
+}
+
+.item1__detalle{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item1 h1{
+    font-family: var(--font-primary);
+    font-size: 3rem;
+}
+
+.item1 h2{
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    width: 150px;
+}
+
+.items__detalle{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item2{
+    grid-area: item2;
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    background-color: var(--color-secondary);
+}
+
+.item2 h1{
+    font-family: var(--font-primary);
+    font-size: 2rem;
+}
+
+.item2 h2{
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    width: 150px;
+}
+
+.item3{
+    grid-area: item3;
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    background-color: var(--color-terthiary);
+}
+
+.item3 h1{
+    font-family: var(--font-primary);
+    font-size: 2rem;
+}
+
+.item3 h2{
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    width: 150px;
+}
+
+.item4{
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    grid-area: item4;
+    background-color: var(--color-secondary);
+}
+
+.item4 h1{
+    font-family: var(--font-primary);
+    font-size: 2rem;
+}
+
+.item4 h2{
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    width: 150px;
+}
+
+/* Responsive */
+
+@media (max-width:768px) {
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}

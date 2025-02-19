@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: black;
+ color: white;
+ height: 100vh;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 14px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+ cursor: pointer;
+}
+
+/* Estilos animación */
+
+.cadrado{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    position: relative;
+    animation: color 2s ease infinite;
+}
+
+@keyframes color {
+    0%{
+        background-color: brown;
+        top: 0;
+
+    }
+    50%{
+        background-color: blue;
+        top: 50%;
+    }
+    100%{
+        background-color: chartreuse;
+        top: 0;
+    }
+}

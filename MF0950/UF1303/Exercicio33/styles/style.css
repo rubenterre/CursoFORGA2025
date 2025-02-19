@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: gray;
+  color: white;
+}
+
+body,
+input,
+button {
+  font-size: 14px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Estilos */
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  height: 100vh;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-1 {
+  background-color: #3498db;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.btn-1:hover {
+  background-color: #2980b9;
+}
+
+.btn-2 {
+  background-color: #2ecc71;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.btn-2:hover {
+  transform: scale(1.1);
+}
+
+.btn-3 {
+  background-color: brown;
+  color: white;
+  box-shadow: 0px 3px 2px black;
+  transition: all 0.3s ease;
+}
+
+.btn-3:hover {
+  box-shadow: 0px 1px 2px black;
+}
+
+.btn-4 {
+  color: blueviolet;
+  background-color: white;
+  transition: all 0.3s ease-in;
+}
+
+.btn-4:hover {
+  color: white;
+  background-color: blueviolet;
+}
+
+.btn-5 {
+  background-image: url(../assets/fondo.png);
+  background-position: left;
+  background-blend-mode: multiply;
+  text-shadow: 1px 1px 1px black;
+  color: white;
+  transition: all 0.5s ease-in;
+}
+
+.btn-5:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.602);
+}
+
+.btn-6 {
+  transition: all 0.5s ease-in;
+}
+
+.btn-6:hover {
+  rotate: 360deg;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.602);
+}

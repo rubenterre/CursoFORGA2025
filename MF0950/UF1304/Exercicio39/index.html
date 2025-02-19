@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+  <style>
+    body{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+  </style>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <p>Elementos e atributos</p>
+
+    <form action="" method="post">
+        <!-- Campo de texto  -->
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" placeholder="Introduza o seu nome" required>
+        
+    
+        <!-- Contrasinal -->
+    <label for="contrasinal">Contrasinal:</label>
+    <input type="password" id="contrasinal" name="contrasinal" required placeholder="Introduza a súa contrasinal">
+
+    
+        <!-- Campo de selección -->
+    <label for="pais">País:</label>
+    <select name="pais" id="pais">
+        <option value="">Selecciona un país</option>
+        <option value="es">España</option>
+        <option value="pt">Portugal</option>
+        <option value="fr">Francia</option>
+    </select>
+        
+    
+        <!-- Botón de opción -->
+    <label for="linguas">Linguas:</label>
+    <div>
+        <input type="radio" name="linguas" id="linguas" value="es">
+        <label for="linguas">Español</label>
+    </div>
+    <div>
+        <input type="radio" name="linguas" id="linguas" value="fr">
+        <label for="linguas">Francia</label>
+    </div>
+
+    
+        <!-- Caixa de verificación -->
+    <div>
+        <label for="linguas">Linguas:</label>
+        <div>
+            <input type="checkbox" name="linguas" id="linguas" value="es">
+            <label for="linguas">Español</label>
+        </div>
+        <div>
+            <input type="checkbox" name="linguas" id="linguas" value="pt">
+            <label for="linguas">Portugués</label>
+        </div>
+    </div>
+
+    <br>
+    <!-- Campo con formato -->
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" name="telefono" id="telefono" placeholder="Introduce o teu teléfono">
+
+    <br>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" placeholder="Introduce o teu email">
+
+
+
+    <!-- Área de texto -->
+    <label for="comentarios">Comentarios:</label><br>
+    <textarea name="comentarios" id="comentarios" cols="30" rows="10">
+    </textarea>
+
+    
+    <!-- Calendarios (data-pickers) -->
+    <label for="calendario">Selecciona unha data:</label>
+    <input type="date" name="calendario" id="calendario" value="2023-11-07">
+
+    <label for="calendario_semana">Selecciona unha semana</label>
+    <input type="week" name="calendario_semana" id="calendario_semana">
+
+    <label for="calendario_mes">Selecciona un mes</label>
+    <input type="month" name="calendario_mes" id="calendario_mes">
+    
+    <label for="hora">Selecciona unha hora</label>
+    <input type="time" name="hora" id="hora">
+
+    <label for="calendario_horas">Selecciona unha data e unha hora:</label>
+    <input type="datetime-local" name="calendario_horas" id="calendario_horas">
+
+    <!-- Barra de progreso -->
+    <label for="progreso"></label>
+    <progress value="30" max="100" id="progreso"></progress>
+
+    <!-- Medidor -->
+    <label for="medidor">Medidor</label>
+    <meter value="50" max="100" id="medidor"></meter>
+
+    <!-- Paleta de cores -->
+    <label for="cores">Paleta de cores</label>
+    <input type="color" name="cores" id="cores">
+
+    <!-- Selector de rango -->
+    <label for="range">Selector de rango:</label>
+    <input type="range" name="range" id="range">
+
+       <!-- Botón de enviar -->
+       <input type="submit" value="enviar">
+
+       <button type="submit">ENVIAR</button>
+   
+
+</form>
+</body>
+</html>

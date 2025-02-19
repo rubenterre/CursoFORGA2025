@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url(./fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url(./fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: Poppins-ExtraBold;
+  src: url(./fonts/Poppins-ExtraBold.ttf);
+}
+
+:root{
+  --font-primary: Poppins-Regular;
+  --font-secondary: Poppins-Medium;
+  --font-tertiary: Poppins-ExtraBold;
+  --color-primary: black;
+  --color-secondary: #7D7D7D;
+  --color-tertiary: #FD0058;
+}
+
+body {
+ background: white;
+ color: black;
+ -webkit-font-smoothing: antialiased;
+ padding: 20px;
+ height: 100vh;
+}
+
+body, input, button {
+ font-size: 14px;
+ font-family: var(--font-primary);
+}
+
+button {
+ cursor: pointer;
+}
+
+/* Estilos TRENDY */
+
+
+/* Header */
+
+.header{
+  height: 80px;
+}
+
+.header__nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__contact{
+  display: flex;
+  gap: 20px;
+}
+
+.header__a{
+  text-decoration: none;
+  color: var(--color-primary);
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  border: 1px solid var(--color-primary);
+  border-radius: 48px;
+  padding: 5px 20px;
+}
+
+.header__a:hover{
+  background-color: var(--color-tertiary);
+  color: white;
+  border: 1px solid var(--color-tertiary);
+}
+
+/* Main */
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 30px;
+}
+
+.marketing{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.marketing__presentation{
+  margin-bottom: 30px;
+}
+
+.marketing__h1{
+  font-family: var(--font-primary);
+  font-size: 3rem;
+  font-weight: 300;
+  width: 250px;
+  line-height: 3.2rem;
+}
+
+.marketing__span{
+  font-family: var(--font-tertiary);
+}
+
+.marketing__p{
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  margin: 30px 0px;
+  width: 80%;
+}
+
+.marketing__buttons{
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.marketing__a{
+  font-family: var(--font-secondary);
+  color: white;
+  text-decoration:none;
+  padding: 10px 30px;
+  background-color: var(--color-tertiary);
+  border-radius: 40px;
+}
+
+.marketing__a:hover{
+  background-color: white;
+  color: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
+}
+
+.marketing__a--black{
+  background-color: var(--color-primary);
+}
+
+
+.statistics{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.statistics__card{
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.statistics__h2{
+  font-family: var(--font-primary);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.statistics__p{
+  font-family: var(--font-primary);
+  color: var(--color-secondary);
+  font-size: 1rem;
+}
+
+.marketing__nav{
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ width: 85%;
+ padding: 15px 30px;
+ border-radius: 40px;
+ border: 1px solid black;
+}
+
+.marketing__a--menu{
+  font-family: var(--font-primary);
+  font-size: .8rem;
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+
+.marketing__a--menu:hover{
+  color: var(--color-primary);
+}
+
+
+/* Promos */
+
+.promos{
+  display: flex;
+  flex-direction: column;
+}
+
+.promos__img img{
+  width: 50vw;
+}
+
+.promos__cards{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.promos__card{
+  height: 50vh;
+  border-radius: 40px;
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card1{
+  grid-column-start: 1;
+  grid-row-start:2;
+  background-color: var(--color-tertiary);
+}
+
+.card2{
+  grid-column-start: 2;
+  grid-row-start:2;
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.promos__a{
+  border: 2px solid white;
+  border-radius: 23px;
+  color: white;
+  text-align: center;
+  padding: 5px 10px;
+  text-decoration: none;
+  width: 150px;
+  font-family: var(--font-secondary);
+  font-size: .8rem;
+}
+
+.promos__a:hover{
+  background-color: white;
+  color: var(--color-tertiary);
+  font-family: var(--font-secondary);
+  font-size: .8rem;
+}
+
+.promos__h3{
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
+  color: white;
+}
+
+.promos__p{
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  color: white;
+}
+
+@media (max-width:768px){
+
+  .header__nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  .header__img{
+    order: -1;
+  }
+
+  .header__contact{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header__a{
+    text-align: center;
+    width: 100%;
+  }
+
+  .main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    padding: 10px;
+  }
+
+  .marketing__presentation{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .marketing__h1{
+    text-align: center;
+    font-size: 2.4rem;
+  }
+
+  .marketing__p{
+    text-align: center;
+    width: 100%;
+  }
+
+  .marketing__buttons{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .statistics{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0px;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .marketing__nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    border: 0px;
+  }
+
+  .marketing__a--menu{
+    background-color: var(--color-tertiary);
+    color: white;
+    width: 100%;
+    text-align: center;
+    border-radius: 40px;
+    padding: 15px 20px;
+  }
+
+  .promos__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+  }
+
+  .promos__img img{
+    width: 100%;
+  }
+
+  .promos__cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .promos__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promos__h3{
+    text-align: center;
+  }
+
+  .promos__p{
+    text-align: center;
+  }
+}
