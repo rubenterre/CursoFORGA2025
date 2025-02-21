@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+:root {
+  --color-primary: white;
+  --color-secondary: #d9d9d9;
+  --color-tertiary: #ef0756;
+  --color-gray: #666666;
+  --font-primary: Montserrat;
+}
+
+body {
+  background: url(../assets/img/fondo.png);
+  background-size: cover;
+  background-position: center;
+  color: var(--color-primary);
+  -webkit-font-smoothing: antialiased;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body,
+input,
+button {
+  font-size: 14px;
+  font-family: var(--font-primary);
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Estilos Nike */
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: black;
+}
+
+.header__nav {
+  display: flex;
+  gap: 40px;
+}
+
+.header__a {
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.header__a:hover{
+  color: var(--color-tertiary);
+}
+
+.header__buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.header__a--login {
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.header__a--login:hover{ 
+  color: var(--color-tertiary);
+}
+
+.header__a--signup {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.header__a--signup:hover{
+  color: var(--color-tertiary);
+}
+
+/* Main */
+
+#video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form__presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form__h1 {
+  font-family: var(--font-primary);
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 45px;
+  text-align: center;
+}
+
+.form__inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.form__inputs button {
+  background-color: var(--color-tertiary);
+  border-radius: 8px;
+  color: var(--color-primary);
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 18px 34px;
+  border: 0px;
+  box-shadow: 0px 2px 4px black;
+}
+
+input[type="email"] {
+  width: 640px;
+  height: 52px;
+  border-radius: 8px;
+  background: var(--color-primary);
+  padding-left: 10px;
+  border: 0px;
+  box-shadow: 0px 2px 4px black;
+}
+
+.form__conditions {
+  background-color: var(--color-primary);
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  box-shadow: 0px 2px 4px black;
+  gap: 10px;
+}
+
+input[type="checkbox"] {
+  width: 64px;
+  accent-color: var(--color-tertiary);
+  transform: scale(1.5);
+}
+
+.form__text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form__text label {
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-gray);
+}
+
+label span {
+  color: var(--color-tertiary);
+}
+
+.form__p--conditions {
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-gray);
+}
+
+.footer{
+  display: none;
+}
+
+
+/* Responsive */
+
+@media (max-width:768px){
+
+  body{
+    overflow: scroll;
+  }
+
+  .header{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 120px;
+  }
+
+  .header__buttons{
+    display: none;
+  }
+
+  #video{
+    width: 100%;
+    height: 120vh;
+  }
+
+  .form{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form__inputs{
+    display: flex;
+    flex-direction: column;
+  }
+
+  input[type="email"] {
+    width: 100%;
+  }
+
+  .form__inputs button {
+    width: 100%;
+  }
+
+
+.footer{
+  display: block;
+  height: 80px;
+  background-color: black;
+  position: relative;
+  bottom: 10px;
+}
+
+.footer__buttons{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+}
+}

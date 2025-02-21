@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="gl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 41</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="header__img"
+        src="./assets/img/Logo_Nike.svg"
+        alt="Logo de Nike"
+      />
+      <nav class="header__nav">
+        <a class="header__a" href="#">Inicio</a>
+        <a class="header__a" href="#">Novedades</a>
+        <a class="header__a" href="#">Tenda</a>
+      </nav>
+
+      <div class="header__buttons">
+        <a href="#" class="header__a--login">Log in</a>
+        <a href="#" class="header__a--signup">Sign Up</a>
+      </div>
+    </header>
+    <video id="video" autoplay loop muted>
+      <source
+        src="./assets/video/Nike_AirMax270.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <main class="main">
+      <form class="form" action="" method="get">
+        <div class="form__presentation">
+          <h1 class="form__h1">
+            Apúntate ao noso boletín de novas e promocións.
+          </h1>
+          <p class="form__p">
+            Únete a nosa newsletter e non entérate de todas as novedades!
+          </p>
+        </div>
+        <div class="form__inputs">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Escribe o teu correo electrónico"
+          />
+          <button type="submit">Subscribirse</button>
+        </div>
+        <div class="form__conditions">
+          <input type="checkbox" name="conditions" id="conditions" required/>
+          <div class="form__text">
+            <label for="conditions">
+              Rexístrate para recibir as nosas comunicacións comerciais!
+              <span>*</span>
+            </label>
+            <p class="form__p--conditions">
+              Ao activar esta opción, dou o meu consentimento para recibir
+              comunicacións comerciais de Nike sobre novas e tendencias actuais,
+              ofertas limitadas, novidades e información sobre os teus puntos e
+              cupóns. Atoparás máis información ao respecto na política de Nike.
+            </p>
+          </div>
+        </div>
+      </form>
+    </main>
+    <footer class="footer">
+      <div class="footer__buttons">
+        <a href="#" class="header__a--login">Log in</a>
+        <a href="#" class="header__a--signup">Sign Up</a>
+      </div>
+    </footer>
+  </body>
+</html>

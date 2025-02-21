@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: WorkSans;
+    src: url(./fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+:root{
+    --color-primary: #050B32;
+    --color-secondary: #576D99;
+    --color-tertiary: #0060F0;
+    --color-span:#F24E1E;
+    --font-primary: WorkSans;
+}
+
+body {
+ background: url(../assets/fondo.png);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 120vh;
+ color: var(--color-primary);
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 14px;
+ font-family: var(--font-primary);
+}
+
+button {
+ cursor: pointer;
+}
+
+/* Estilos formulario */
+
+/* Header */
+
+.header{
+    background-color: white;
+    height: 80px;
+    width: 100vw;
+
+}
+
+.header__nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    width: 100vw;
+}
+
+.header__buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__a{
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.header__a--signup{
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    background-color: var(--color-tertiary);
+    padding: 11px 32px;
+    border-radius: 12px;
+    box-shadow: 0px 12px 20px 0px rgba(78, 111, 158, 0.20);
+}
+
+/* Main */
+
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+.form{
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid var(--color-tertiary);
+}
+
+.form__presentaion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.form__details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form__h1{
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+}
+
+.form__p{
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--color-secondary);
+    text-align: center;
+}
+
+.form__inputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.form__input{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--color-secondary);
+}
+
+input::placeholder{
+    color: var(--color-secondary);
+}
+
+select{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
+
+}
+
+.form__input span{
+    color: var(--color-span);
+}
+
+.form__name{
+    font-family: var(--font-primary);
+    font-size: 1rem;
+}
+
+.form__email{
+    grid-column: span 2;
+}
+
+.form__submit{
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__submit input{
+    border-radius: 10px;
+    border: 1px solid var(--color-tertiary);
+    background: white;
+    font-family: var(--font-primary);
+    color: var(--color-tertiary);
+    padding: 10px 64px;
+}
+
+
+/* Responsive */
+
+

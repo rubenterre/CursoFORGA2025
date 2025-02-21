@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 40</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <img class="header__img" src="./assets/Qargon.png" alt="Logo de Qargon">
+            <div class="header__buttons">
+                <a href="#" class="header__a">Log in</a>
+                <a href="#" class="header__a--signup">Sing Up</a>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <form class="form" action="" method="get">
+            <div class="form__presentation">
+                <div class="form__img">
+                    <img src="./assets/Location.png" alt="Icono de localización cun mapa e un símbolo en forma de frecha sinalando un lugar do mapa">
+                </div>
+                <div class="form__details">
+                    <h1 class="form__h1">Imos configurar a túa conta</h1>
+                    <p class="form__p">Completa o formulario para obter toda a información</p>
+                </div>
+            </div>
+            <div class="form__inputs">
+                <div class="form__input form__name">
+                    <label for="name">Nome <span>*</span></label>
+                    <input type="text" name="name" id="name" placeholder="Escribe o teu nome">
+                </div>
+                <div class="form__input form__lastname">
+                    <label for="lastname">Apelidos <span>*</span></label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Escribe os teus apelidos">
+                </div>
+                <div class="form__input form__cities">
+                    <label for="cities">Cidade</label>
+                    <select name="cities" id="cities">
+                        <option value="">Selecciona unha cidade</option>
+                        <option value="vigo">Vigo</option>
+                        <option value="santiago">Santiago de Compostela</option>
+                        <option value="lugo">Lugo</option>
+                        <option value="pontevedra">Pontevedra</option>
+                    </select>
+                </div>
+                <div class="form__input form__tel">
+                    <label for="tel">Teléfono</label>
+                    <input type="tel" name="tel" id="tel" placeholder="Escribe o teu teléfono">
+                </div>
+                <div class="form__input form__email">
+                    <label for="email">Email<span>*</span></label>
+                    <input type="email" name="email" id="email" placeholder="Escribe o teu correo electrónico">
+                </div>
+                <div class="form__submit">
+                    <input type="submit" value="Enviar">
+                </div>
+            </div>
+        </form>
+    </main>
+    
+</body>
+</html>
