@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 43</title>
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar header__nav">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="./assets/img/ESA_Title.svg" alt="Logo de ESA en texto" width="100%">
+              </a>
+              <a class="navbar-brand" href="#">
+                <img src="./assets/img/European_Space_Agency_logo.svg" alt="Logo de ESA en siglas" width="100%">
+              </a>
+            </div>
+          </nav>
+    </header>
+    <video id="video" autoplay loop muted>
+        <source src="./assets/videos/tierra_video.mp4" type="video/mp4">
+        <source src="./assets/videos/tierra_video.webm" type="video/webm">
+    </video>
+    <main class="main">
+        <form class="form" action="" method="post">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                       <h1 class="form__h1">Formulario de contacto</h1>
+                       <p class="form__p">Antes de contactar con nos a través deste formulario, por favor considere revisar <a class="form__a" href="http://" target="_blank" rel="noopener noreferrer">o noso apartado de FAQs</a>  para revisar se a súa pregunta xa foi respondida.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nome<span>*</span> </label>
+                            <input type="text" class="form-control" id="name" placeholder="Escribe o teu nome" required>
+                          </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="mb-3">
+                            <label for="lastname" class="form-label">Apelidos<span>*</span> </label>
+                            <input type="text" class="form-control" id="lastname" placeholder="Escribe os teus apelidos" required>
+                          </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Teléfono<span>*</span> </label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Escribe os teu teléfono" required>
+                          </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="mb-3">
+                            <label for="company" class="form-label">Empresa (opcional) </label>
+                            <input type="text" class="form-control" id="company" placeholder="Escribe o nome da empresa">
+                          </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email<span>*</span> </label>
+                            <input type="email" class="form-control" id="email" placeholder="Escribe o teu correo electrónico" required>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaxe<span>*</span> </label>
+                            <textarea class="form-control" id="message" rows="3" required></textarea>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="privacy">
+                            <label class="form-check-label" for="privacy">
+                              Acepto a <a class="form__a" href="http://" target="_blank" rel="noopener noreferrer">política de privacidade</a>
+                            </label>
+                        </div>  
+                    </div>
+                    <div class="col-12 d-flex justify-content-center">
+                        <button type="submit" class="btn form__button mt-4 px-4">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <p class="footer__p">European Space Agency - 2023</p>
+    </footer>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>

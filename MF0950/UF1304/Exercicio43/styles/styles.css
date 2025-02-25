@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: NotesESA;
+    src: url(./fonts/NotesEsaBol.otf);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(./fonts/OpenSans-VariableFont.ttf);
+}
+
+:root{
+    --color-primary: #003247;
+    --color-secondary: #00B19D;
+    --font-primary: NotesESA;
+    --font-secondary: OpenSans;
+}
+
+body {
+ background: black;
+ color: white;
+ -webkit-font-smoothing: antialiased;
+ width: 100vw;
+ height: 100vh;
+}
+
+body, input, button {
+ font-size: 14px;
+ font-family: var(--font-secondary);
+}
+
+button {
+ cursor: pointer;
+}
+
+/* Estilos do formulario */
+
+/* Header */
+
+.header__nav{
+    background-color: var(--color-primary);
+}
+
+/* Video */
+
+#video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Main */
+
+.form{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    padding: 49px 54px;
+}
+
+.form__h1{
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    color: var(--color-primary);
+}
+
+.form__p{
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    color: var(--color-primary);
+}
+
+.form__a{
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.form-label{
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.form-label span{
+    color: var(--color-secondary);
+}
+
+.form-control{
+    border-radius: 0px;
+    border: 1px solid var(--color-primary);
+}
+
+.form-check-label{
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    color: var(--color-primary);
+}
+
+.form-check-input:checked{
+    accent-color: var(--color-secondary);
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
+}
+
+.form__button{
+    border: 2px solid var(--color-primary);
+    border-radius: 0px;
+}
+
+.form__button:hover{
+    background-color: var(--color-primary);
+    color: white;
+}
+
+/* Footer */
+
+.footer{
+    position: relative;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.footer__p{
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Responsive */
+
+@media (max-width:768px) {
+
+    #video{
+        display: none;
+    }
+
+    .form{
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: translate(0);
+    }
+
+    .footer{
+        position: relative;
+        bottom: 0px;
+        left: 0%;
+        transform: translate(0);
+    }
+
+}
