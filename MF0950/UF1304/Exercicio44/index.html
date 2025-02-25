@@ -8,27 +8,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <div class="container mt-5">
-        <label for="priceRange" class="form-label">Selecciona el rango de precio:</label>
-        <input type="range" class="form-range" id="priceRange" min="6723" max="70543" step="1">
-        <p id="priceDisplay" class="mt-2">Precio seleccionado: 70543€</p>
-      </div>
-      
-      <script>
-      const priceRange = document.getElementById('priceRange');
-      const priceDisplay = document.getElementById('priceDisplay');
-      
-      function updatePrice() {
-        const value = priceRange.value;
-        const minPrice = 6723;
-        const maxPrice = 70543;
-        const selectedPrice = parseInt(value);
-        priceDisplay.textContent = `Precio seleccionado: ${selectedPrice}€`;
-      }
-      
-      priceRange.addEventListener('input', updatePrice);
-      updatePrice(); // Inicializar el display
-      </script>
+
     <script src="./js/bootstrap.bundle.js"></script>
     <script src="./js/scripts.js"></script>
 </body>
