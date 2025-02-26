@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url(./fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url(./fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url(./fonts/Poppins-SemiBold.ttf);
+}
+
+:root {
+  --color-primary: #666666;
+  --color-secondary: #3e4c66;
+  --color-ducati: #cc0000;
+  --color-background: #0f0f0f;
+  --font-primary: Poppins-Regular;
+  --font-secondary: Poppins-Medium;
+  --font-tertiary: Poppins-SemiBold;
+}
+
+body {
+  background: var(--color-background);
+  background-image: url(../assets/img/ducati-diavel-v4.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100dvw;
+  color: var(--color-primary);
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body,
+input,
+button {
+  font-size: 14px;
+  font-family: var(--font-primary);
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Estilos do proxecto */
+
+/* Header */
+
+.header__nav--secondary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.header__a--secondary {
+  text-decoration: none;
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.header__a--secondary img {
+  margin-right: 10px;
+  width: 21px;
+  height: 16px;
+  aspect-ratio: 21/16;
+}
+
+.header__nav {
+  background-color: white;
+  border-bottom: 10px solid var(--color-ducati);
+}
+
+.header__ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 17px 0px;
+  margin-bottom: 0px;
+}
+
+.header__a {
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+
+/* Main */
+
+.main{
+    width: 100%;
+    height: 217px;
+    background: rgba(15, 15, 15, 0.81);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__moto{
+  display: none;
+}
+
+.form{
+    height: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__opcions{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+    background-color: white;
+}
+
+.form__h4{
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.form-select{
+    border: 0px;
+}
+
+.form__motor{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__radios{
+    display: flex;
+    gap: 10px;
+}
+
+.form-check-input{
+  border: 1px solid var(--color-ducati);
+
+}
+
+.form-check-input:focus{
+  box-shadow: 0 0 0 .25rem rgba(253, 13, 13, 0.25);
+}
+
+.form-check-input:checked{
+  background-color: var(--color-ducati);
+}
+
+.form__option{
+  background-color: var(--color-ducati);
+}
+
+.form-select:focus{
+  box-shadow: 0 0 0 .25rem rgba(253, 13, 13, 0.25);
+
+}
+
+.form__search button{
+    background-color: var(--color-ducati);
+    width: 100px;
+    padding: 42% 0px;
+    border: 0px;
+}
+
+.form__search--responsive button{
+  display: none;
+}
+
+
+/* Footer */
+
+.footer{
+    background-color: var(--color-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 123px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+body{
+  background: black;
+}
+
+.header__ul{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header__logotipo{
+  order: -1;
+}
+
+.header__logo{
+  height: 80px;
+}
+  .main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .main__moto{
+    display: block;
+  }
+  
+  .form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__opcions{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0px;
+    position: relative;
+    top:-50px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+ .form__h4{
+  width: 226px;
+  margin-top: 10px;
+ }
+
+  .form__search{
+    display: none;
+  }
+
+  .form__search--responsive button{
+    height: 40px;
+    width: 250px;
+    background-color: var(--color-ducati);
+    display: block;
+    border: 0px;
+    margin-top: 20px;
+  }
+
+  .footer{
+    height: 100px;
+  }
+
+  .footer__img{
+    width: 240px;
+  }
+}
+
+@media (max-width: 425px) {
+
+.main{
+  height: 83%;
+}
+
+.main__moto{
+  display: block;
+}
+
+  .form__opcions{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0px;
+    position: relative;
+    top:90px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}

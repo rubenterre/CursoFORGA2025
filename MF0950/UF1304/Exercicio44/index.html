@@ -1,15 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercicio 44</title>
-    <link rel="stylesheet" href="./styles/bootstrap.min.css">
-    <link rel="stylesheet" href="./styles/styles.css">
-</head>
-<body>
-
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="header__nav--secondary">
+              <a
+                class="header__a--secondary"
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./assets/img/es.png"
+                  alt="Bandera de España"
+                  width="21px"
+                />
+                España
+              </a>
+              <a
+                class="header__a--secondary"
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MyDucaty
+              </a>
+            </nav>
+          </div>
+          <div class="col-12">
+            <nav class="header__nav">
+              <ul class="header__ul">
+                <li class="header__li">
+                  <a class="header__a" href="#">Modelos</a>
+                </li>
+                <li class="header__li">
+                  <a class="header__a" href="#">Equipamento</a>
+                </li>
+                <li class="header__li header__logotipo">
+                  <a class="header__a" href="#">
+                    <img
+                      class="header__logo"
+                      src="./assets/img/ducati_logo.png"
+                      alt="Logo de Ducati"
+                      height="41px"
+                    />
+                  </a>
+                </li>
+                <li class="header__li">
+                  <a class="header__a" href="#">Solicitar test</a>
+                </li>
+                <li class="header__li">
+                  <a class="header__a" href="#">Contacto</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+    <main class="main">
+      <div class="main__moto">
+        <img src="./assets/img/ducati-diavel-v4.webp" alt="Moto Ducati Diavel V4" width="100%">
+      </div>
+      <div class="container">
+        <form class="form" action="" method="post">
+          <div class="form__opcions">
+            <div class="form__opcion">
+              <h4 class="form__h4">Modelos</h4>
+              <select
+                class="form-select"
+                id="models"
+                aria-label="Default select example"
+              >
+                <option class="form__option" selected>Selecciona un modelo</option>
+                <option class="form__option" value="1">XDiavel V4</option>
+                <option class="form__option" value="2">Panigale V4</option>
+                <option class="form__option" value="3">Multiestrada V2</option>
+              </select>
+            </div>
+            <div class="form__opcion form__motor">
+              <h4 class="form__h4">Tipos de motor</h4>
+              <div class="form__radios">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="motors"
+                    id="motors1"
+                  />
+                  <label class="form-check-label" for="motors">
+                    2 cilindros
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="motors"
+                    id="motors2"
+                  />
+                  <label class="form-check-label" for="motors">
+                    4 cilindros
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form__opcion">
+              <h4 class="form__h4">Prezos</h4>
+              <select class="form-select" aria-label="Default select example">
+                <option class="form__option" selected>Selecciona un prezo</option>
+                <option class="form__option" value="1">16.390€</option>
+                <option class="form__option" value="2">31.540€</option>
+                <option class="form__option" value="3">32.290€</option>
+              </select>
+            </div>
+            <div class="form__search--responsive">
+              <button type="submit">
+                <img src="./assets/img/search-normal.svg" alt="Icono de buscar" />
+              </button>
+            </div>
+          </div>
+          <div class="form__search">
+            <button type="submit">
+              <img src="./assets/img/search-normal.svg" alt="Icono de buscar" />
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+        <img
+          class="footer__img"
+          src="./assets/img/Ducati-Member-of-the-Audi.svg"
+          alt="Logo do grupo Ducati como membro de Audi"
+        />
+    </footer>
+</div>
     <script src="./js/bootstrap.bundle.js"></script>
     <script src="./js/scripts.js"></script>
-</body>
+  </body>
 </html>
