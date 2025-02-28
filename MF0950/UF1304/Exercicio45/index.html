@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 45</title>
+    <link rel="stylesheet" href="./styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <video id="video" autoplay loop muted>
+      <source src="./assets/video/Glassmorphic_fondo.mp4" type="video/mp4" />
+    </video>
+    <main class="main">
+      <div class="main__logo">
+        <img
+          class="main__img"
+          src="./assets/img/Logo_Rhombus.svg"
+          alt="Logo de Rhombus"
+        />
+      </div>
+      <section class="formulario">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-8">
+              <form class="form" action="" method="post">
+                <h1 class="form__h1">Iniciar sesión</h1>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label form__label"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Escribe o teu correo electrónico"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="inputPassword5" class="form-label form__label"
+                  >Contrasinal</label
+                >
+                <input
+                  type="password"
+                  id="inputPassword5"
+                  class="form-control"
+                  aria-describedby="passwordHelpBlock"
+                  placeholder="Escribe o teu contrasinal"
+                />
+                </div>
+                
+                <a class="form__a" href="http://" target="_blank" rel="noopener noreferrer"
+                  >Esqueciches o contrasinal?</a
+                >
+
+                <button class="form__button" type="submit">
+                  Iniciar sesión
+                  <img
+                    class="form__img"
+                    src="./assets/img/flecha.svg"
+                    alt="Frecha que indica a acción de iniciar sesión"
+                  />
+                </button>
+                <p class="form__p">
+                  Non tes conta?
+                  <a class="form__a" href="http://" target="_blank" rel="noopener noreferrer"
+                    >Rexístrate</a
+                  >
+                </p>
+              </form>
+            </div>
+
+           <div class="col-12 col-md-12 col-lg-4 form__pro">
+              <div class="form__promotion">
+                <div class="form__info">
+                  <img
+                    class="form__img--pro"
+                    src="./assets/img/Logo_RhombusPRO.svg"
+                    alt="Logo de RhombusPRO"
+                  />
+                  <p class="form__p--pro">
+                    Envía ficheiros sen límite de tamaño, máis de 2TB de espazo
+                    na nube…
+                  </p>
+                  <a
+                    class="form__a--pro"
+                    href="http://"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Saber máis</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="bubble">
+        <img src="./assets/img/bola_cristal.png" alt="Bola de cristal flotante" width="200px">
+  </div>
+    </main>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
