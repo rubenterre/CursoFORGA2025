@@ -218,9 +218,19 @@ text-align: center;
 
 /* Responsive */
 
+
 @media (max-width:960px) {
+
+    body{
+        height: 130vh;
+    }
+
     .bubble{
         display: none;
+    }
+
+    #video{
+        height: 130vh;
     }
 
     .form__pro{
