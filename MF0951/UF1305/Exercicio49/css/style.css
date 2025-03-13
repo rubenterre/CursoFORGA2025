@@ -1,0 +1,80 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: Roboto-medium;
+    src: url(../assets/fonts/Roboto-Medium.ttf);
+}
+
+/* Estilos xerais */
+
+:root{
+    --cor-principal: #f57e72;
+    --cor-secundario: #455368;
+    --cor-terciario: #f1f1f1;
+    --fonte-principal: Roboto;
+    --fonte-secundaria: Roboto-medium;
+}
+
+body{
+    background: rgb(244,203,189);
+    background: radial-gradient(circle, rgba(244,203,189,1) 0%, rgba(252,195,115,1) 35%, rgba(255,231,223,1) 100%);;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+    place-content: center;
+}
+
+.main__h1{
+    font-family: var(--fonte-principal);
+    color: var(--cor-secundario);
+}
+
+.calculadora{
+    background: var(--cor-terciario);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.calculadora__numero{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+label{
+    font-family: var(--fonte-principal);
+    font-size: 1.5em;
+}
+
+input{
+    padding: 10px;
+}
+
+button{
+    width: 100%;
+    background-color: #f57e72;
+    border: 0px;
+    padding: 10px;
+    color: white;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+}
+
+.resultados{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.resultados__p{
+    font-family: var(--fonte-secundaria);
+    color: #455368;
+    text-align: center;
+}

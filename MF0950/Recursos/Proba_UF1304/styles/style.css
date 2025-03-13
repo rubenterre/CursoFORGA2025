@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(./font/Inter-VariableFont.ttf);
+}
+
+:root{
+    --font-primary: Inter;
+    --color-primary: #775DA6;
+    --color-secondary: #898989;
+    --color-tertiary: #202020;
+}
+
+body {
+ background: url(../assets/img/fondo.png);
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ width: 100vw;
+ height: 120vh;
+ color: var(--color-secondary);
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 14px;
+ font-family: var(--font-primary);
+}
+
+button {
+ cursor: pointer;
+}
+
+/* Header */
+
+.header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo{
+    padding-left: 49px;
+}
+
+/* Main */
+
+.formulario{
+    background-color: white;
+    border-radius: 12px;
+    padding: 24px 25px 15px 25px;
+}
+
+.formulario__h2{
+    font-family: var(--font-primary);
+    color: var(--color-tertiary);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.formulario__p{
+    font-family: var(--font-primary);
+    color: var(--color-tertiary);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.formulario__a{
+    font-family: var(--font-primary);
+    color: var(--color-primary);
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.formulario__label{
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    color: var(--color-tertiary);
+}
+
+span{
+    color: var(--color-primary);
+}
+
+.form-check-input:checked{
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.form-check-input:focus{
+    box-shadow: 0 0 0 .25rem rgba(140, 66, 149, 0.332);
+}
+
+.formulario__radios{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 0px;
+}
+
+.formulario__radio{
+    font-family: var(--font-primary);
+    color: var(--color-tertiary);
+    font-size: 1rem;
+}
+
+.formulario__submit{
+    background-color: var(--color-primary);
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 2px solid transparent;
+    font-weight: 600;
+}
+
+.formulario__submit:hover{
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+
+/* Responsive */
+
+@media (max-width:576px) {
+ 
+body{
+    background: url(../assets/img/fondo.png);
+}
+    
+.formulario{
+    margin-bottom: 2rem;
+}
+
+}

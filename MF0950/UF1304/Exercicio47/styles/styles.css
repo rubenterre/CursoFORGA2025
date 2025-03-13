@@ -29,7 +29,8 @@ body {
  background: var(--color-bg);
  color: var(--color-gray);
  -webkit-font-smoothing: antialiased;
- padding: 0px 8%;
+/*  padding: 0px 8%; */
+grid-template-columns: 1fr 3fr 1fr;
 }
 
 body, input, button {

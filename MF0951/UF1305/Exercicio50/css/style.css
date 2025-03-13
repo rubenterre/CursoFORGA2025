@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: white;
+ color: black;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 14px;
+ font-family: var(--fonte-principal);
+}
+
+button {
+ cursor: pointer;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: Roboto-medium;
+    src: url(../assets/fonts/Roboto-Medium.ttf);
+}
+
+/* Estilos xerais */
+
+:root{
+    --cor-principal: #f57e72;
+    --cor-secundario: #455368;
+    --cor-terciario: #f1f1f1;
+    --fonte-principal: Roboto;
+    --fonte-secundaria: Roboto-medium;
+}
+
+body{
+    background: rgb(244,203,189);
+    background: radial-gradient(circle, rgba(244,203,189,1) 0%, rgba(252,195,115,1) 35%, rgba(255,231,223,1) 100%);;
+}
+
+.header{
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.header__h1{
+    font-family: var(--fonte-principal);
+    color: var(--cor-secundario);
+    font-weight: 600;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 50vh;
+    place-content: center;
+}
+
+.main__h1{
+    font-family: var(--fonte-principal);
+    color: var(--cor-secundario);
+}
+
+.calculadora{
+    background: var(--cor-terciario);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 15px 15px rgba(0, 0, 0, 0.142);
+}
+
+.calculadora__div{
+    display: flex;
+    place-content: center;
+}
+
+.calculadora__boton{
+    padding: 10px 10px;
+    margin-top: 10px;
+    background-color: var(--cor-secundario);
+    color: white;
+    font-size: 1.3em;
+    width: 50px;
+    box-sizing: border-box;
+    border: 0px;
+}
+
+.calculadora__boton--operador{
+    padding: 10px 10px;
+    margin-top: 10px;
+    background-color: var(--cor-principal);
+    color: white;
+    font-size: 1.3em;
+    width: 50px;
+    box-sizing: border-box;
+    border: 0px;
+}
+
+#display{
+    width: 100%;
+    padding: 20px 5px;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+
+.resultados{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.resultados__p{
+    font-family: var(--fonte-secundaria);
+    color: #455368;
+    text-align: center;
+}
+
+.footer{
+    text-align: center;
+}
+
+.footer__p{
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    color: var(--cor-secundario);
+}

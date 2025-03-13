@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 50</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__h1">Calculadora</h1>
+    </header>
+    <main>
+<!--         <section class="calculadora">
+            <div id="calculadora__div">
+                <input type="text" id="display" readonly>
+                <br>
+                <button class="calculadora__boton" onclick="appendCharacter('1')">1</button>
+                <button class="calculadora__boton" onclick="appendCharacter('2')">2</button>
+                <button class="calculadora__boton" onclick="appendCharacter('3')">3</button>
+                <button class="calculadora__boton--operador" onclick="setOperator('+')">+</button>
+                <br>
+                <button class="calculadora__boton" onclick="appendCharacter('4')">4</button>
+                <button class="calculadora__boton" onclick="appendCharacter('5')">5</button>
+                <button class="calculadora__boton" onclick="appendCharacter('6')">6</button>
+                <button class="calculadora__boton--operador" onclick="setOperator('-')">-</button>
+                <br>
+                <button class="calculadora__boton" onclick="appendCharacter('7')">7</button>
+                <button class="calculadora__boton" onclick="appendCharacter('8')">8</button>
+                <button class="calculadora__boton" onclick="appendCharacter('9')">9</button>
+                <button class="calculadora__boton--operador" onclick="setOperator('*')">*</button>
+                <br>
+                <button class="calculadora__boton" onclick="appendCharacter('0')">0</button>
+                <button class="calculadora__boton" onclick="clearDisplay()">C</button>
+                <button class="calculadora__boton" onclick="calculate()">=</button>
+                <button class="calculadora__boton--operador" onclick="setOperator('/')">/</button>
+            </div>
+        </section> -->
+        <div id="calculator">
+            <input type="text" id="display" readonly>
+            <button class="digit">1</button>
+            <button class="digit">2</button>
+            <button class="digit">3</button>
+            <button class="digit">4</button>
+            <button class="digit">5</button>
+            <button class="digit">6</button>
+            <button class="digit">7</button>
+            <button class="digit">8</button>
+            <button class="digit">9</button>
+            <button class="digit">0</button>
+            <button class="operator">+</button>
+            <button class="operator">-</button>
+            <button class="operator">*</button>
+            <button class="operator">/</button>
+
+            <button id="equals">=</button>
+            <button id="clear">C</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__p">Tódolos dereitos reservados - 2025</p>
+    </footer>
+    
+    <script src="js/scriptEvents.js"></script>
+</body>
+</html>

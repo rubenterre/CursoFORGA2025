@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proba UF1304</title>
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="./assets/img/Odoo_logo.svg" alt="Logo de Odoo">
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                    <form class="formulario" action="" method="post">
+                        <div class="formulario__titulares">
+                            <h2 class="formulario__h2">
+                                Rexístrate
+                            </h2>
+                            <div class="formulario__login">
+                                <p class="formulario__p">Xa tes conta? <a class="formulario__a" href="http://" target="_blank" rel="noopener noreferrer">Iniciar sesión</a> </p>
+                            </div>
+                        </div>
+                        <div class="formulario__inputs">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                    <div class="mb-3">
+                                        <label for="nome" class="form-label formulario__label">Nome<span>*</span></label>
+                                        <input type="text" class="form-control" id="nome" placeholder="Escribe o teu nome">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                    <div class="mb-3">
+                                        <label for="apelidos" class="form-label formulario__label">Apelidos</label>
+                                        <input type="text" class="form-control" id="nome" placeholder="Escribe os teus apelidos">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label formulario__label">Email<span>*</span></label>
+                                        <input type="email" class="form-control" id="email" placeholder="Escribe o teu email">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                    <div class="mb-3">
+                                        <label for="phone" class="form-label formulario__label">Teléfono<span>*</span></label>
+                                        <input type="tel" class="form-control" id="phone" placeholder="Escribe o teu teléfono">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                    <div class="mb-3">
+                                        <label for="password" class="form-label formulario__label">Contrasinal<span>*</span></label>
+                                        <input type="password" class="form-control" id="password" placeholder="Escribe o teu contrasinal">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                    <div class="mb-3">
+                                        <label for="country" class="form-label formulario__label">Pais</label>
+                                        <select id="country" class="form-select" aria-label="País">
+                                            <option selected>Selecciona un país</option>
+                                            <option value="es">España</option>
+                                            <option value="pt">Portugal</option>
+                                            <option value="it">Italia</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-check-label formulario__label" for="">Xénero</label>
+                                    <div class="formulario__radios">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="xenero" id="masculino">
+                                            <label class="form-check-label formulario__radio" for="mascuilno">
+                                              Masculino
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="xenero" id="feminino">
+                                            <label class="form-check-label formulario__radio" for="feminino">
+                                              Feminino
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="xenero" id="outro">
+                                            <label class="form-check-label formulario__radio" for="outro">
+                                              Outro
+                                            </label>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label for="intereses" class="form-label formulario__label">Intereses principais</label>
+                                        <textarea class="form-control" id="intereses" rows="3" placeholder="Intereses principais"></textarea>
+                                      </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn formulario__submit">Comezar a proba gratuita</button>
+                                
+                                    <div class="form-check mt-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="policy">
+                                        <label class="form-check-label formulario__label" for="policy">
+                                            Acepto as <a class="formulario__a" href="http://" target="_blank" rel="noopener noreferrer">Políticas de privacidade</a> 
+                                        </label>
+                                    </div>
+                                    <hr class="formulario__hr">
+                                    <p class="formulario__p">
+                                       <span>*</span> Campo obrigatorio
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+</html>
