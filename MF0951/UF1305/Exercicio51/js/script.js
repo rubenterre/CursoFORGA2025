@@ -1,18 +1,23 @@
-var entradaLista;
-var listaHTML;
+var entradaLista = document.getElementById("novaEntrada");
+var listaHTML = document.getElementById("lista");
 
-entradaLista=document.getElementById("novaEntrada")
-listaHTML=document.getElementById("lista")
+if (localStorage.getItem("listaElementos")) {
+    listaHTML.innerHTML = localStorage.getItem("listaElementos");
+}
 
-ultimoTexto=localStorage.getItem("ultimoTexto")
-entradaLista.value=ultimoTexto;
+function agregarElemento() {
+    var novoTexto = entradaLista.value.trim();
 
- function agregarElemento () {
- var novoTexto;
- var novoElemento;
- novoTexto=entradaLista.value
- novoElemento=document.createElement("li");
- novoElemento.innerText=novoTexto;
- listaHTML.appendChild(novoElemento);
- localStorage.setItem("ultimoTexto",novoTexto);
- } 
+    if (novoTexto) {
+        var novoElemento = document.createElement("div");
+        novoElemento.classList.add("lista__item");
+        novoElemento.innerHTML = novoTexto;
+        listaHTML.appendChild(novoElemento);
+
+
+
+        localStorage.setItem("listaElementos", listaHTML.innerHTML);
+
+        entradaLista.value = '';
+    }
+}

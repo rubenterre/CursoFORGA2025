@@ -4,16 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exercicio 51</title>
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-  <div id="ingresarDatos">
-    <input type="text" id="novaEntrada" placeholder="Escribe aquí"/>
-    <button onclick="agregarElemento()">Añadir</button> 
+  <main class="main">
+    <header class="header">
+      <h1 class="header__h1">LISTA DA COMPRA</h1>
+    </header>
+    <div class="search" id="ingresarDatos">
+      <input type="text" id="novaEntrada" placeholder="Escribe aquí"/>
+      <button class="search__button" onclick="agregarElemento()">Agregar</button>
     </div>
-    <div>
-    <ul id="lista">
-    </ul>  
-    </div>
+      <div>
+      <div class="lista" id="lista">
+      </div>  
+      </div>
+  </main>
+
  <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: #020235;
+ color: white ;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 14px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+button {
+ cursor: pointer;
+}
+
+:root{
+  --color-primary: #1c1f2b;
+  --color-gradient: conic-gradient(#ff4545,#00ff99,#006aff,#ff0095,#ff4545);
+}
+
+/* Lista */
+
+.header{
+  display: flex;
+  justify-content: center;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    gap: 30px;
+}
+
+#novaEntrada{
+   height: 40px;
+   width: 250px;
+}
+
+.search__button{
+  height: 40px;
+  background-color: var(--color-primary);
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0px 10px;
+}
+
+#lista{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.lista__item{
+    margin: 0 auto;
+    padding: 2rem;
+    width: 300px;
+    background: var(--color-primary);
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    font-size: 2rem;
+    text-transform: lowercase;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista__item:after, .lista__item::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: conic-gradient(#ff4545,#00ff99,#006aff,#ff0095,#ff4545);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+
+}
+
+.lista__item::before{
+    filter: blur(1.5rem);
+    opacity: .5;
+
+}
+
+.lista__borrar{
+  height: 40px;
+  background-color: var(--color-primary);
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
