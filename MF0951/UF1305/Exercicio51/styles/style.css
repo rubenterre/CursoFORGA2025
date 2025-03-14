@@ -30,11 +30,12 @@ button {
 .header{
   display: flex;
   justify-content: center;
+  margin: 20px 0px;
 }
 
 .main{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     width: 100vw;
