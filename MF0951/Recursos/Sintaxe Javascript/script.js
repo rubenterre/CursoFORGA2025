@@ -11,6 +11,10 @@ const constante = "Constante"; // O valor dunha constante non pode ser módifica
 
 console.log(constante);
 
+
+
+
+
 // Tipos de datos en JavaScript
 
 let numeros = 234;
@@ -26,8 +30,6 @@ let arrayString = ["María","Pepe", "Juan"]; // Admite calquera tipo de dato
 console.log(arrayString[2]); // En JavaScript empézase a numerar de 0 en adiante polo que a primerira posición é o 0
 //Resultado Juan, xa que ocupa a posición 2, a posición 0 sería María e a 1 sería Pepe.
 
-
-
 let obxecto = {
     nome: "Carlos",
     idade: 23,
@@ -41,6 +43,49 @@ let Indefinido = undefined;
 let symboll = Symbol("descripción");
 
 
+
+
+
+
+// Operadores lóxicos
+
+//Operador AND (&&) devolve true se ambos operando son true, do contrario devolve false
+
+const idade = 20;
+const tenLicencia = true;
+
+if (idade >= 18 && tenLicencia) {
+  console.log("Podes conducir."); // Execútase porque ámbalas dúas condicións son true.
+} else {
+  console.log("Non podes conducir.");
+}
+
+//Operador OR (||) devolve true se alomenos un dos operando é true, do contrario devolve false
+
+const tenTarxeta = false;
+const tenPayPal = true;
+
+if (tenTarxeta || tenPayPal) {
+  console.log("Podes realizar o pago."); // Execútase porque unha das condicións é true.
+} else {
+  console.log("Non podes realizar o pago.");
+}
+
+
+//Operador NOT (!) invierte o valor de verdad do seu operando
+
+const acceso = false;
+
+if (!acceso) {
+  console.log("Acceso denegado."); // Execútase porque !false é true.
+} else {
+  console.log("Benvido!");
+}
+
+
+
+
+
 // Operadores aritméticos
 
 let suma = 5 + 4; //Operador de suma
@@ -52,6 +97,9 @@ let multiplicacion = 5 * 5; //Operador de multiplicación
 let division = 6 / 8; // Operador de división
 
 let modulo = 24 % 5; // Operador de módulo que devuelve el resto de la división 
+
+
+
 
 
 // Operadores de comparación
@@ -97,12 +145,18 @@ console.log(a >= b) //Resultado de que a é maior ou igual que b é true
 console.log(a <= b) //Reultado de que a é menor ou igual que b é false
 
 
+
+
+
 // Comentarios de JavaScript
 
 //Este é un comentario de liña
 
 /* Este é un comentario
 en varias liñas */
+
+
+
 
 
 
@@ -144,6 +198,13 @@ switch (expresion){
     //Bloque de código que se executará se non se cumple ningún caso.
 }
 
+
+
+
+
+
+
+
 // Estrutura de control de bucle
 
 // Estrutura for
@@ -161,6 +222,12 @@ while (condition) {
 }
 
 
+
+
+
+
+
+
 // Funcións en JavasScript
 
 function sumar(parametros) {
@@ -169,6 +236,13 @@ function sumar(parametros) {
 }
 
 sumar(parametrosNovos) // Unha vez declarada podemos utilizar a función en calquera parte do noso código deste xeito
+
+
+
+
+
+
+
 
 
 // Obxectos 
@@ -194,6 +268,11 @@ let JSON = {
     "activo": true,
     "amigos": ["Brais","Pepe","María"]
 }
+
+
+
+
+
 
 
 //Eventos
