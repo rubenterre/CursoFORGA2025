@@ -10,8 +10,11 @@ function agregarElemento() {
 
     if (novoTexto) {
         var novoElemento = document.createElement("div");
+        var novoBoton = document.createElement("button");
+        novoBoton.classList.add("clear__borrar");
         novoElemento.classList.add("lista__item");
         novoElemento.innerHTML = novoTexto;
+        
         listaHTML.appendChild(novoElemento);
 
 
@@ -21,3 +24,9 @@ function agregarElemento() {
         entradaLista.value = '';
     }
 }
+
+function clearTotal() {
+    localStorage.clear();
+    location.reload();
+}
+

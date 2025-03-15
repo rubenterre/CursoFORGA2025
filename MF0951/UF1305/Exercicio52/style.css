@@ -1,15 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --color-primary: #062865;
+  --color-secondary: #0056ff;
+  --color-tertiary: #d1efff;
+
+  --color-cobalt-50: #ebf8ff;
+--color-cobalt-100: #d1efff;
+--color-cobalt-200: #aee3ff;
+--color-cobalt-300: #76d5ff;
+--color-cobalt-400: #35bbff;
+--color-cobalt-500: #0795ff;
+--color-cobalt-600: #006fff;
+--color-cobalt-700: #0056ff;
+--color-cobalt-800: #0047d7;
+--color-cobalt-900: #0042aa;
+--color-cobalt-950: #062865;
+
+
+}
+
 body {
-    font-family: Arial, sans-serif;
-  }
-  
+ background: white;
+ color: var(--color-tertiary);
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 14px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+ cursor: pointer;
+}
+
+/* Tarxetas */
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
   .tarxeta {
     display: none;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-cobalt-300);
     padding: 10px;
     margin: 10px;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    background: var(--color-cobalt-50);
+    border-radius: 5px;
+  }
+
+  .tarxeta__h2{
+    color: var(--color-cobalt-950);
+
+  }
+
+  .tarxeta__p{
+    color: var(--color-cobalt-800);
   }
   
+.main__buttons{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+
   button {
-    margin: 5px;
+    height: 30px;
+    padding: 0px 15px;
+    background: linear-gradient(var(--color-cobalt-600), var(--color-cobalt-700));
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);  
+    color: white;
+    border: 1px solid var(--color-cobalt-800);
+    font-weight: 600;
   }
   

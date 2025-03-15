@@ -82,7 +82,7 @@ button {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: conic-gradient(#ff4545,#00ff99,#006aff,#ff0095,#ff4545);
+    background: conic-gradient(#ff4545,#00ff99,#006aff,#ff0095,#ff4545);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -98,7 +98,7 @@ button {
 
 }
 
-.lista__borrar{
+.clear__button{
   height: 40px;
   background-color: var(--color-primary);
   color: white;
