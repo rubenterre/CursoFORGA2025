@@ -30,7 +30,7 @@ let arrayString = ["María","Pepe", "Juan"]; // Admite calquera tipo de dato
 console.log(arrayString[2]); // En JavaScript empézase a numerar de 0 en adiante polo que a primerira posición é o 0
 //Resultado Juan, xa que ocupa a posición 2, a posición 0 sería María e a 1 sería Pepe.
 
-let obxecto = {
+const obxecto = {
     nome: "Carlos",
     idade: 23,
     cidade: "Santiago de Compostela"
