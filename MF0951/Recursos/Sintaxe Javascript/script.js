@@ -49,7 +49,7 @@ let symboll = Symbol("descripción");
 
 // Operadores lóxicos
 
-//Operador AND (&&) devolve true se ambos operando son true, do contrario devolve false
+//Operador AND (&&) devolve true se ambos operandos son true, do contrario devolve false
 
 const idade = 20;
 const tenLicencia = true;
@@ -60,7 +60,7 @@ if (idade >= 18 && tenLicencia) {
   console.log("Non podes conducir.");
 }
 
-//Operador OR (||) devolve true se alomenos un dos operando é true, do contrario devolve false
+//Operador OR (||) devolve true se alomenos un dos operandos é true, do contrario devolve false
 
 const tenTarxeta = false;
 const tenPayPal = true;
@@ -249,7 +249,7 @@ sumar(parametrosNovos) // Unha vez declarada podemos utilizar a función en calq
 
 //Definimos como exemplo o obxecto persoa
 
-let persoa = {
+const persoa = {
     nome: "Iago",
     idade: 30,
     cidade: "Santiago de Compostela",
@@ -261,7 +261,7 @@ let persoa = {
 // JSON
 
 
-let JSON = {
+const JSON = {
     "name":"Pedro",
     "idade":34,
     "cidade": "Lugo",
