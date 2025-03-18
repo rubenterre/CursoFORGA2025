@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 53 - 1 - Cualificación dun estudante</title>
+</head>
+<body>
+ <header class="header">
+    <h1 class="header__h1">Exercicio 53 - 1</h1>
+    <h2 class="header__h2">Cualificación dun estudante</h2>
+ </header>
+ <main class="main">
+    <section class="qualification">
+        <div class="qualification__inputs">
+            <label for="nome">Nome do estudante:</label>
+            <input type="text" name="nome" id="nome">
+            <br>
+            <label for="nota">Calificación:</label>
+            <input type="number" name="nota" id="nota">
+            <br>
+            <button onclick="mostrarResultado()">ENVIAR</button>
+        </div>
+        <div class="qualification__results">
+            <h4 class="qualification__h4">Resultado:</h4>
+            <p class="qualification__p" id="resultado"></p>
+        </div>
+    </section>
+ </main>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

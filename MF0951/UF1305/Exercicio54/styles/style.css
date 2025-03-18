@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url(./fonts/Poppins-Regular.ttf);
+}
+
+:root {
+  --color-primary: #131426;
+  --color-border-button: #27a738;
+  --color-background-button: #7ebe4c;
+  --font-primary: Poppins-Regular;
+}
+
+body {
+  background: url(../assets/img/fondo.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--color-primary);
+  height: 100vh;
+  width: 100vw;
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+  font-size: 14px;
+  font-family: var(--font-primary);
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 25%;
+}
+
+/* Main */
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+}
+
+#animalsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 31px;
+  flex-wrap: wrap;
+  max-width: 572px;
+}
+
+.animais__img{
+    width: 76px;
+}
+
+.animais__button {
+  border-radius: 8px;
+  border: 1px solid var(--color-border-button);
+  background: var(--color-background-button);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  width: 118px;
+  height: 114px;
+  padding: 4px;
+}
+
+.animais__p {
+  color: white;
+  background-color: var(--color-primary);
+  border-radius: 4px;
+  font-family: var(--font-primary);
+  font-size: .8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
