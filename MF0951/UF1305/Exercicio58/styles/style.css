@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Franchise;
+  src: url(./font/Franchise-Bold-hinted.ttf);
+}
+
+:root {
+  --font-primary: Franchise;
+  --color-primary: #ad2d2d;
+  --color-secondary: #161616;
+  --color-tertiary: #100203;
+  --color-white: #fff;
+}
+
+body {
+  background: url(../assets/img/fondo.jpg) var(--color-tertiary);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+  font-size: 14px;
+  font-family: var(--font-primary);
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  height: 66px;
+  padding: 0px 39px;
+  background-color: var(--color-tertiary);
+}
+
+.header__logo {
+  height: 45px;
+}
+
+.header__nav {
+  display: flex;
+  gap: 16px;
+}
+
+.header__a {
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.header__a:hover{
+  color: var(--color-primary);
+}
+
+.header__a--active {
+  color: var(--color-primary);
+}
+
+/* Main */
+
+.discography__decorations::before {
+  content: url(../assets/img/ruffle_black_bottom.png);
+  background: url(../assets/img/ruffle_black_bottom.png);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: bottom;
+  display: block;
+  width: 100vw;
+}
+
+.discography__decorations::after {
+  content: url(../assets/img/ruffle_black_top.png);
+  background: url(../assets/img/ruffle_black_top.png);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: top;
+  display: block;
+  width: 100vw;
+}
+
+.discography__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 270px;
+  width: 100%;
+}
+
+.discography__h1 {
+  font-family: var(--font-primary);
+  color: var(--color-white);
+  font-size: 6rem;
+  text-shadow: 0px 8px 0px var(--color-tertiary);
+}
+
+.discography__container {
+  background: var(--color-tertiary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Filter */
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  margin-right: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: var(--color-secondary);
+  border: 0px;
+  color: var(--color-white);
+  padding: 10px 54px;
+}
+
+.filter-btn:hover{
+  background-color: var(--color-white);
+  color: var(--color-secondary);
+}
+
+.filter-btn.active {
+  background-color: var(--color-primary);
+  color: white;
+  font-size: 1rem;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 1200px;
+}
+
+.album-item {
+  width: 279px;
+  text-align: center;
+  position: relative;
+}
+
+.album-item img {
+  width: 100%;
+  height: auto;
+}
+
+.album-title{
+  display: none;
+}
+
+.album-item:hover{
+  .album-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2rem;
+    background-color: #161616a7;
+    width: 100%;
+    height: 100%;
+  }
+
+  .album-title::after{
+    content: "";
+    width: 40px;
+    height: 5px;
+    background: var(--color-primary);
+    animation: transform .33s ease;
+  }
+}
+
+@keyframes transform {
+  from{
+    width: 0px;
+    transform: scaleX(0);
+  }
+  to{
+    width: 40px;
+    transform: scaleX(1);
+
+  }
+  
+}
+
+
+/* Footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 175px;
+}
+
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer_img {
+  height: 45px;
+}
+
+.footer__p {
+  color: var(--color-white);
+  font-family: var(--font-primary);
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.11px;
+}

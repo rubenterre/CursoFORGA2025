@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 56</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    
+    <header class="header">
+            <div class="header__logo">
+                <img src="./assets/img/logo-ac_jade_horizontal.png" alt="Logo de Assassins Creed Jade" height="60px">
+            </div>
+            <nav class="header__nav">
+                <a class="header__a header__a--logo" href="index.html" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/img/ac_jade_symbol.svg" alt="Símbolo de Assassins Creed Jade para o bóton de inicio">
+                </a>
+                <a class="header__a" href="http://" target="_blank" rel="noopener noreferrer">FEATURED</a>
+                <a class="header__a" href="http://" target="_blank" rel="noopener noreferrer">NEWS</a>
+                <a class="header__a" href="http://" target="_blank" rel="noopener noreferrer">MEDIA</a>
+                <a class="header__a" href="http://" target="_blank" rel="noopener noreferrer">DISCOVERY</a>
+            </nav>
+            <div class="header__social">
+                <img src="./assets/img/socials.png" alt="Iconos de redes sociais">
+            </div>
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/btn_register.svg" alt="Botón para o rexistro de usuarios">
+            </a>
+    </header>
+    <main class="main">
+        <video id="video" autoplay loop muted>
+            <source src="./assets/video/ac_jade_background.mp4" type="video/mp4">
+        </video>
+        <section class="details">
+            <div class="details__container">
+                <div class="details__logo">
+                    <img class="details__img" src="./assets/img/logo-ac_jade.png" alt="Logo de Assassins Creed Jade">
+                </div>
+                <div class="details__markets">
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><img class="details__img--a" src="./assets/img/android.png" alt="Enlace a Google Play"></a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><img class="details__img--a" src="./assets/img/apple.png" alt="Enlace a App Store"></a>
+                </div>
+                <div class="details__video">
+                    <button class="details__button" onclick="abrirModal()">
+                        <img class="details__trailer" src="./assets/img/video-img-poster.svg" alt="Trailer de Assassins Creed Jade">
+                    </button>
+                </div>
+                <div class="details__subscribe">
+                    <a class="details__a--subscribe" href="http://" target="_blank" rel="noopener noreferrer">
+                        <img class="details__img--subscribe" src="./assets/img/btn_subscribe.svg" alt="Botón de subscrición a AC Jade">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-contido">
+            <span id="pecharModal" class="pechar">&times;</span>
+            <iframe id="iframe" src="https://www.youtube.com/embed/pfJw0zBEyjE?si=cS5VfaXfJvowW2Qd" width="560" height="315" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div> 
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

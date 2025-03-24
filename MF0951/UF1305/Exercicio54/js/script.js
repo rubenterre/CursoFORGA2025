@@ -1,5 +1,6 @@
 // Exercicio 54 - Sons de animais
 
+document.addEventListener("DOMContentLoaded", function(){
 
 // JSON
 const animales = {
@@ -43,7 +44,7 @@ const animales = {
         "link": "./assets/audio/cabuxa.mp3",
         "img": "./assets/img/cabuxa.webp",
         "name": "Cabuxa",
-        "color": "#7F96B8"
+        "color": "#6A84A3"
     },
     "Hipopótamo": {
         "link": "./assets/audio/hipopotamo.mp3",
@@ -84,7 +85,7 @@ Object.values(animales).forEach(animal => {
     img.alt = `Icono de ${animal.name}`;
     nombre.textContent = animal.name;
     button.style.background = animal.color;
-    button.style.border = animal.border;
+    button.style.borderColor = animal.border;
 
     button.addEventListener("click", () => {
         const audio = new Audio(animal.link);
@@ -93,3 +94,4 @@ Object.values(animales).forEach(animal => {
 
     container.appendChild(clone);
 });
+})
