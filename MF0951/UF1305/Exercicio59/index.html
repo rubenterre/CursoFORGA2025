@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 59</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__primary">
+        <div class="header__logo">
+          <img
+            src="./assets/img/volvo-logo.svg"
+            alt="Logo de Volvo"
+            class="header__img"
+          />
+        </div>
+        <nav class="header__nav">
+          <a class="header__a" href="#">Nuestros vehículos</a>
+          <a class="header__a" href="#">Busca y configura</a>
+          <a class="header__a" href="#">Clientes</a>
+          <a class="header__a" href="#">Quiénes somos</a>
+        </nav>
+        <div class="market">
+          <a
+            class="market__a"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><div class="market__login">
+              <img
+                src="./assets/img/icon-login.svg"
+                alt="Icono de iniciar sesión"
+              />
+              <p class="market__p">Iniciar sesión</p>
+            </div>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <div class="market__search">
+              <img src="./assets/img/icon-search.svg" alt="Icono de búsqueda" />
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="header__secondary">
+        <p class="header__p">
+          Ahora con Premium Edition desde 28.400€ con wallbox e instalación
+          incluída
+        </p>
+        <a
+          class="header__a--oferta"
+          href="http://"
+          target="_blank"
+          rel="noopener noreferrer"
+          >VER OFERTA ></a
+        >
+      </div>
+    </header>
+    <main class="main">
+      <section class="ex30">
+        <div class="ex30__filter">
+          <div class="ex30__gallery">
+            <img
+              id="gallery"
+              src="./assets/img/color_cars_img/grisoscuro.avif"
+              alt="Coche"
+            />
+          </div>
+          <div class="ex30__colorpicker">
+            <button class="ex30__button" onclick="changeCar('azul')">
+              <img
+                id="azul"
+                src="./assets/img/colors_btn/color_azul_active.svg"
+                alt=""
+              />
+            </button>
+            <button class="ex30__button" onclick="changeCar('branco')">
+              <img
+                id="branco"
+                src="./assets/img/colors_btn/color_branco.svg"
+                alt=""
+              />
+            </button>
+            <button class="ex30__button" onclick="changeCar('grisoscuro')">
+              <img
+                id="grisoscuro"
+                src="./assets/img/colors_btn/color_grisoscuro.svg"
+                alt=""
+              />
+            </button>
+            <button class="ex30__button" onclick="changeCar('negro')">
+              <img
+                id="negro"
+                src="./assets/img/colors_btn/color_negro.svg"
+                alt=""
+              />
+            </button>
+            <button class="ex30__button" onclick="changeCar('amarelo')">
+              <img
+                id="amarelo"
+                src="./assets/img/colors_btn/color_amarelo.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <div class="features__presentation">
+          <div class="features__titles">
+            <h2 class="features__h2">EX30.</h2>
+            <h4 class="features__h4">
+              Descubre nuestro SUV más compacto. Un gran rendimiento en un
+              paquete compacto.
+            </h4>
+            <p class="features__p">
+              En Volvo te garantizamos la fecha de entrega prevista de tu
+              vehículo, proporcionándote – en caso de cualquier contratiempo- un
+              Volvo de gama similar y durante el tiempo que transcurriera hasta
+              la entrega, sin ningún coste para ti. Consulta en tu
+              concesionario.
+            </p>
+          </div>
+          <div class="features__price">
+            <h2 class="features__h2--price">
+                COMPRA DESDE 39.050€
+            </h2>
+        </div>
+        </div>
+        <div class="features__data">
+            <div class="features__card">
+                <h3 class="features__h3">
+                    476 km
+                </h3>
+                <h5 class="features__h5">
+                    Autonomía eléctrica(Hasta)
+                </h5>
+            </div>
+
+            <div class="features__card">
+                <h3 class="features__h3">
+                    26 <span>min.</span>
+                </h3>
+                <h5 class="features__h5">
+                    Estimación de tiempo de carga rápida de CC (10-80 %)
+                </h5>
+            </div>
+
+            <div class="features__card">
+                <h3 class="features__h3">
+                    3.6 <span>s</span>
+                </h3>
+                <h5 class="features__h5">
+                    Aceleración (0-100 km/h)*
+                </h5>
+            </div>
+
+            <div class="features__card">
+                <h3 class="features__h3">
+                    17 <span>k</span>W<span>h</span>
+                </h3>
+                <h5 class="features__h5">
+                    Consumo de energía (por 100km)
+                </h5>
+            </div>
+
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

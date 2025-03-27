@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>color_amarillo_active</title>
+    <g id="Página-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-979, -798)" fill="#E9E95D">
+            <g id="color_amarillo_active" transform="translate(979, 798)">
+                <circle id="Óvalo" cx="19" cy="19" r="19"></circle>
+                <circle id="Óvalo" stroke="#FFFFFF" stroke-width="2" cx="19" cy="19" r="13"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

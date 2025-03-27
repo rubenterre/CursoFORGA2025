@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(./fonts/Poppins.ttf);
+}
+
+:root{
+    --font-primary: Poppins;
+}
+
+body {
+ background: linear-gradient(125deg, #005bb2 0%, #005bb2 17%, #002e7a 100%);
+ height: 120vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ color: white;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 14px;
+ font-family: var(--font-primary);
+}
+
+button {
+ cursor: pointer;
+}
