@@ -52,7 +52,9 @@ async function actulizarDatos(lon, lat) {
         document.getElementById("humidity").innerHTML = `${data.main.humidity}%`;
         document.getElementById("tempMax").innerHTML = `${Math.round(data.main.temp_max)}ºC`;
         document.getElementById("tempMin").innerHTML = `${Math.round(data.main.temp_min)}ºC`;
-        document.getElementById("location").innerHTML = `${data.name}`
+        document.getElementById("location").innerHTML = `${data.name}`;
+        document.getElementById("description").innerHTML = `${data.weather[0].description}`;
+
 
     }
     
