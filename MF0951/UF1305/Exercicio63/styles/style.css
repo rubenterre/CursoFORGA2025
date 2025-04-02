@@ -1,0 +1,12 @@
+/* Dark Theme */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+      /* Update CSS variables */
+    }
+  }
+  
+  [data-theme=dark],
+  .theme-dark {
+    /* Update CSS variables */
+  }

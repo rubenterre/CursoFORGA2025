@@ -65,3 +65,15 @@ button {
   }
   
 }
+
+/* Buscar */
+
+.buscar{
+  height: 100vh;
+  background-color: #2e333d;
+}
+
+.buscador{
+  margin-top: 8rem;
+}
+
