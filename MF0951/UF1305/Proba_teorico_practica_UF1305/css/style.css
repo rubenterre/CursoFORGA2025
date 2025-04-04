@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Ferrai-SansRegular;
+  src: url('./fonts/Ferrari-SansRegular.woff2');
+}
+
+@font-face {
+  font-family: Ferrari-SansMedium;
+  src: url('./fonts/Ferrari-SansMedium.woff2');
+}
+
+:root{
+    --cor-principal: #181818;
+    --cor-secundario:#121312;
+    --cor-vermello:#d92d1f;
+    --cor-vermello-claro:#eb736a;
+    --cor-gris:#969696;
+    --fonte-principal: Ferrai-SansRegular;
+    --fonte-secundaria: Ferrari-SansMedium;
+}
+
+body {
+ background: var(--cor-principal);
+ color: white ;
+ -webkit-font-smoothing: antialiased;
+ display: flex;
+}
+
+body, input, button {
+ font-size: 16px;
+ font-family: var(--fonte-principal);
+}
+
+button {
+ cursor: pointer;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+/* HEADER */
+.header{
+  width: 68px;
+  background: var(--cor-principal);
+}
+
+.header__logo > img{
+  width: 31px;
+  margin: 18px;
+}
+
+
+/* MAIN */
+
+.main{
+  background: var(--cor-secundario);
+  height: 100vh;
+  width: 100%;
+}
+
+.card{
+  display: flex;
+}
+
+.card__menu{
+  width: 320px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: start;
+  justify-content: start;
+  align-content: center;
+  padding: 20% 0px;
+}
+
+.card__cabecera{
+  padding: 20px 20px;
+}
+
+.card__h4{
+  font-family: var(--fonte-secundaria);
+  color: var(--cor-gris);
+  font-size: 1rem;
+}
+
+.card__boton{
+  width: 320px;
+  padding: 10px 35px;
+  background: var(--cor-secundario);
+  border: 0px;
+  color: white;
+  text-align: start;
+  font-size: 1rem;
+}
+
+.card__boton:hover{
+  width: 100%;
+  padding: 10px 35px;
+  background: white;
+  border: 0px;
+  color: var(--cor-secundario);
+  text-align: start;
+}
+
+.active{
+  width: 100%;
+  padding: 10px 35px;
+  background: white;
+  border: 0px;
+  color: var(--cor-secundario);
+  text-align: start;
+}
+
+.card__coches{
+  background: radial-gradient(109.17% 37.61% at 53.74% 37.61%, #5F5F5F 0%, #171717 100%);
+  width: 100%;
+}
+
+.card__coche{
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 100%;
+}
+
+.card__img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__img img{
+  width: clamp(200px, 40vw, 800px);
+}
+
+.card__info{
+  width: 263px;
+  background: radial-gradient(ellipse at bottom, var(--cor-vermello-claro), var(--cor-vermello));
+  padding: 19px 21px 23px 21px;
+  color: white;
+  transition: all 1s ease;
+  margin: 2rem 0px;
+}
+
+.card__info:hover{
+  width: 263px;
+  background: radial-gradient(ellipse at bottom, var(--cor-vermello), var(--cor-vermello));
+  padding: 19px 21px 23px 21px;
+  color: white;
+  margin: 2rem 0px;
+  transition: all 1s ease;
+}
+
+.vertical-line {
+  display: inline-block;
+  height: 10px;
+  color: var(--cor-vermello);
+  width: 1px;
+  margin: 0 5px;
+}
+
+.card__dl{
+  width: 330px;
+}
+
+.card__dt{
+  padding: 10px 0px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: var(--fonte-secundaria);
+}
+
+.card__dd{
+  padding: 0px 0px 10px 30px;
+  color: azure;
+  height: 50px;
+}
+
+
+
+/* Versión móbil */
+
+@media screen and (max-width:800px){
+  body {
+    background: var(--cor-principal);
+    color: white ;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+   }
+
+   .header{
+    width: 100%;
+   }
+
+   .header__logo{
+    display: flex;
+    justify-content: center;
+   }
+
+   .card{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .card__menu {
+    width: 100vw;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: start;
+    align-content: center;
+    padding: 20px 0px;
+}
+
+.card__boton{
+  text-align: center;
+}
+
+.card__boton:hover{
+  text-align: center;
+}
+
+.card__coches{
+  height: 100%;
+}
+
+.card__coche{
+  height: 100%;
+}
+
+  .card__img img {
+    max-width: 100%;
+}
+
+.card__info{
+margin-bottom: 3rem;
+}
+}

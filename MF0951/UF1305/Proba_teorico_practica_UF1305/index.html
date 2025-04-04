@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="gl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proba teórico práctica - UF1305</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <div class="header__logo">
+          <img src="assets/logo_ferrari_blanco.webp" alt="Logo de Ferrari" />
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="card">
+        <div class="card__menu">
+          <div class="card__cabecera">
+            <h4 class="card__h4">Tódolos modelos</h4>
+          </div>
+          <button id="btn1" onclick="cambiarCoche('296 GTB')" class="card__boton">296 GTB</button>
+          <button id="btn2" onclick="cambiarCoche('812 GTS')"  class="card__boton">812 GTS</button>
+          <button id="btn3" onclick="cambiarCoche('SF90 Spider')"  class="card__boton">SF90 Spider</button>
+          <button id="btn4" onclick="cambiarCoche('Purosangue')"  class="card__boton">Purosangue</button>
+        </div>
+        <div class="card__coches">
+          <div class="card__coche">
+            <div class="card__logo">
+              <img
+                id="logoCoche"
+                src="assets/img/Logo_296GTB.avif"
+                alt="Logo de Ferrari 296GTB"
+              />
+            </div>
+            <div class="card__img">
+              <img
+                id="modelo"
+                src="assets/img/296GTB.avif"
+                alt="Ferrari 296GTB"
+              />
+            </div>
+            <div class="card__detalles">
+
+              <dl class="card__dl">
+
+                <dt class="card__dt">
+                  <span class="vertical-line">|</span> Motor
+                </dt>
+                <dd id="motor" class="card__dd">
+                  V6 Biturbo + MGU-K(eléctrico)
+                </dd>
+
+                <dt class="card__dt">
+                  <span class="vertical-line">|</span> Potencia
+                </dt>
+                <dd id="potencia" class="card__dd">830CV (610CV + 220CV)</dd>
+
+                <dt class="card__dt">
+                  <span class="vertical-line">|</span> Aceleración
+                </dt>
+                <dd id="aceleracion" class="card__dd">0 a 100km/h en 2,9s</dd>
+
+              </dl>
+              
+            </div>
+            <a class="card__info" href="#">Para más información</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+<script src="./js/script.js"></script>
+  </body>
+</html>
