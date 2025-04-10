@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 66</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="informacion">
+        <div class="informacion__logos">
+          <img
+            id="informacionLogo"
+            src="assets/Logos/logo_loki.png"
+            alt="Logo de la serie Loki"
+          />
+        </div>
+
+        <div class="informacion__detalles">
+          <div class="informacion__iconos">
+            <img
+              id="informacionIdade"
+              class="informacion__iconos--idade"
+              src="assets/iconos/12+.png"
+              alt="A partir de 12 anos"
+            />
+            <img
+              class="informacion__iconos--audiodescripcion"
+              src="assets/iconos/audiodescripcion.png"
+              alt="Audiodescripcións"
+            />
+            <img
+              class="informacion__iconos--subtitulos"
+              src="assets/iconos/subtitulos.png"
+              alt="Subtítulos"
+            />
+            <p id="informacionAnos" class="informacion__anos">2021-2023</p>
+            <p class="informacion__punto">•</p>
+            <p id="informacionTempada" class="informacion__temporadas">
+              2 tempadas
+            </p>
+          </div>
+          <div class="informacion__categorias">
+            <p id="informacionCategorias" class="informacion__p">
+              Ciencia ficción, Fantástica, Superhéroe, Acción e aventura
+            </p>
+          </div>
+        </div>
+
+        <div class="informacion__descripcion">
+          <p id="informacionDescripcion" class="informacion__sumario">
+            A nova serie "Loki", de Marvel Studios, empeza alí onde terminou
+            "Vengadores: Endgame". Nela, o voluble vilán Loki (Tom Hiddleston)
+            volve gañarse o alcume de Dios do Engano. Kate Herron é a súa
+            directora e Michael Waldron o guionista principal.
+          </p>
+          <div id="informacionTrailer">
+            <button onclick="mostrarPopupLoki()" class="informacion__button">Trailer</button>
+          </div> 
+        </div>
+      </section>
+      <nav class="menu">
+        <button onclick="botonSeries('Loki')" class="menu__boton">
+          <img
+            src="assets/cartel_Loki.png"
+            alt="Cartel da segunda tempada de Loki"
+          />
+        </button>
+        <button onclick="botonSeries('Percy')" class="menu__boton">
+          <img
+            src="assets/cartel_PercyJackson.png"
+            alt="Cartel da primeira tempada de Percy Jackson"
+          />
+        </button>
+        <button onclick="botonSeries('Mandalorian')" class="menu__boton">
+          <img
+            src="assets/cartel_mandalorian.png"
+            alt="Cartel da terceira tempada de Mandalorian"
+          />
+        </button>
+        <button onclick="botonSeries('Solo')" class="menu__boton">
+          <img
+            src="assets/cartel_soloAsesinatos.png"
+            alt="Cartel da terceira tempada de Sólo asesinatos en el edificio"
+          />
+        </button>
+      </nav>
+      <div id="popup" class="contenedor">
+        <div class="popup">
+          <div id="popupIframe">
+        
+          </div>
+
+          <br />
+          <div class="popup__cerrar">
+            <button id="popupCerrar" class="popup__button" onclick="cerrarPopup()">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
