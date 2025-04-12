@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="126px" height="34px" viewBox="0 0 126 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>MovieBox</title>
+    <g id="Main-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="Poppins-Bold, Poppins" font-size="24" font-weight="bold">
+        <g id="Inicio" transform="translate(-35, -81)" fill-rule="nonzero">
+            <g id="MovieBox" transform="translate(35.293, 81.42)">
+                <text id="App" fill="#5A38FD">
+                    <tspan x="74.203" y="25">App</tspan>
+                </text>
+                <text id="Movie" fill="#FEFEFE">
+                    <tspan x="0" y="25">Movie</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
