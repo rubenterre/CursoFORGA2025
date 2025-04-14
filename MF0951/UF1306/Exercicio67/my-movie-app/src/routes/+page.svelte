@@ -12,7 +12,7 @@
     <a href="/buscar">
     <img class="explorar__img" src="./img/explora_banner.svg" alt="Explorar películas de la filmoteca">
     </a>
-    <a class="explorar__btn" href="/buscar">Buscar</a>
+    <a class="explorar__btn" href="/buscar">BUSCAR</a>
 </div>
 
 </div>
@@ -38,9 +38,10 @@
     }
 
     .explorar__btn{
-        background: var(--color-blue);
-        color: var(--color-primary);
-        width: 100px;
+        background: var(--color-black);
+        color: var(--color-blue);
+        border: 1px solid var(--color-blue);
+        width: 180px;
         height: 40px;
         border-radius: 16px;
         display: flex;

@@ -24,7 +24,7 @@
         --font-secondary: Poppins-Bold;
         --color-primary: #FEFEFE;
         --color-darkblack: #000;
-        --color-blue: #5A38FD;
+        --color-blue: #28e98c;
         --color-black: #141418;
         --color-grey: #B6B6B7;
         --color-subtlegrey: #F0F0F1;

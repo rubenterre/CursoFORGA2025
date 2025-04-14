@@ -98,7 +98,8 @@
 
 	.buscador__button {
 		background-color: var(--color-blue);
-		color: var(--color-primary);
+		color: var(--color-black);
+		font-family: var(--font-primary);
 		width: 120px;
 		height: 41px;
 		border-radius: 20.5px;
@@ -175,7 +176,7 @@
 
 	.movies__a{
 		font-family: var(--font-primary);
-		color: var(--color-grey);
+		color: var(--color-blue);
 		font-size: 1rem;
 		text-decoration: none;
 	}
