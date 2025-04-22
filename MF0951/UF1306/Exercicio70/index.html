@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 70 - The North Face - Parallax</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <button id="cerrar" onclick="cerrarMenu()">X</button>
+        <div class="header__container">
+            <nav class="header__nav">
+                <a class="header__a" href="index.html">
+                <div class="header__logo">
+                    <img src="./assets/logo_thenorthface.svg" alt="Logo The North Face" class="header__img">
+                </div>
+                </a>
+                <a class="header__a" href="#" target="_blank" rel="noopener noreferrer">Home</a>
+                <a class="header__a" href="" target="_blank" rel="noopener noreferrer">Muller</a>
+                <a class="header__a" href="" target="_blank" rel="noopener noreferrer">Nenos</a>
+                <a class="header__a" href="" target="_blank" rel="noopener noreferrer">Calzado</a>
+                <a class="header__a" href="http://" target="_blank" rel="noopener noreferrer">Bolsos & equipamento</a>
+                <a class="header__a" href="http://" target="_blank" rel="noopener noreferrer">Outlet</a>
+                <a class="header__a" href="http://" target="_blank" rel="noopener noreferrer">Explora</a>
+            </nav>
+            <div class="header__search">
+                <input type="text" class="header__input" placeholder="Buscar">
+                <button class="header__button">
+                    <img src="./assets/lupa_icon.svg" alt="Icono de buscar">
+                </button>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <section id="slider">
+            <div id="content-images-slider">
+                <div class="rellax image-slider" data-rellax-speed="3"></div>
+                <div class="rellax image-slider" data-rellax-speed="-7">
+                    <h1 class="slider__h1">AVENTURA</h1>
+                </div>
+                <div class="rellax image-slider" data-rellax-speed="1"></div>
+            </div>
+        </section>
+
+        <section id="unete" class="unete">
+            <div class="unete__container">
+                <div class="unete__content">
+                    <h2 class="unete__h2">Únete a la comunidad The North Face</h2>
+                    <p class="unete__p">Recibe un 10% de descuento en tu primera compra y mantente al tanto de las últimas novedades.</p>
+                    <a href="#" class="unete__a">Suscríbete</a>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+<footer class="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <h2 class="footer__h2">The North Face</h2>
+                <p class="footer__p">© 2025 The North Face. Todos los derechos reservados.</p>
+            </div>
+        </div>
+
+</footer>
+    <script src="js/rellax.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

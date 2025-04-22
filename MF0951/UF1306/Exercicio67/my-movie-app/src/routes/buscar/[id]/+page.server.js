@@ -13,3 +13,4 @@ export async function load({ params }) {
     cast: (await creditsResponse.json()).cast.slice(0, 5)
   };
 }
+

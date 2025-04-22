@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1655px" height="373px" viewBox="0 0 1655 373" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>AVENTURA</title>
+    <defs>
+        <text id="text-1" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="300" font-weight="bold" fill="#FFFFFF">
+            <tspan x="140.55" y="525">AVENTURA</tspan>
+        </text>
+        <filter x="-0.9%" y="-2.1%" width="101.8%" height="108.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="9" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Página-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="1">
+        <g id="TheNorthFace" transform="translate(-132, -296)" fill="#FFFFFF">
+            <g id="AVENTURA" transform="translate(0, 64)">
+                <use filter="url(#filter-2)" xlink:href="#text-1"></use>
+                <use xlink:href="#text-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>
