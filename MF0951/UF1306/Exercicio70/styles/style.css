@@ -236,17 +236,28 @@ button {
     text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+    .header--mobile{
+        display: none;
+    }
+    
+}
+
 @media screen and (max-width: 768px) {
 
+.header{
+    display: none;
+}
+
+#menu{
+    display: none;  
+}
   
-.header {
+.header--mobile {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    height: 340px;
-    background: var(--color-secondary);
     position: fixed;
     width: 100%;
     left: 0;
@@ -256,14 +267,44 @@ button {
     transition: background 0.3s ease;
   }
   
+  .header__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        padding-top: 44px;
+        padding-bottom: 20px;
+        background: var(--color-secondary);
+  }
+
+  .header__hamburger{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 2rem;
+    width: 100%;
+    height: 40px;
+    background: var(--color-secondary);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+    cursor: pointer;
+  }
+
+  .header__button{
+    background: transparent;
+    border: none;
+  }
+
   .header__nav{
       display: flex;
       align-items: center;   
       flex-direction: column;
       gap: 20px; 
   }
-
-  
 
   .header__search{
     display: none;
