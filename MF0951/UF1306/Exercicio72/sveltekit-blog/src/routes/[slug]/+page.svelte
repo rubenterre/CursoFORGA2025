@@ -1,12 +1,13 @@
 <script>
+	import HeaderPost from "$lib/components/HeaderPost.svelte";
+
 	export let data;
 	const { post } = data;
 
-/*     const paragraph =  $state('paragraph');
- */</script>
+</script>
 
 {#if post}
-
+<HeaderPost {data} />
 <section class="article">
     <div class="article__title">
         <h2 class="article__h2">
@@ -35,6 +36,8 @@
 <style>
     .article{
         padding: 3rem 2rem;
+        max-width: 1300px;
+        margin: 0 auto;
     }
 
     .article__title{
@@ -88,10 +91,17 @@
         margin-top: 2rem;
     }
 
-/*     .paragraph{
+    :global(.article__text p:first-of-type){
         font-size: 1.5rem;
         color: var(--color-dark);
         font-weight: 300;
-    } */
+        margin-bottom: 2rem;
+    }
+
+    :global(.article__text p:not(first-of-type)){
+        font-size: 1rem;
+        color: var(--color-dark);
+        font-weight: 400;
+    }
 
 </style>

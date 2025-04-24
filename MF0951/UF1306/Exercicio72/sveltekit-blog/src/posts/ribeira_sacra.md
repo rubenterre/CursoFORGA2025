@@ -3,7 +3,7 @@ title: "Ribeira Sacra e Canón do Sil"
 date: "2025-04-22"
 summary: "Percorre en catamarán os impresionantes Canóns do Sil e do Miño, intérnate noutro mundo."
 image: "/images/ribeira_sacra.png"
-image-post: "/images/ribeira_sacra_post.png"
+imagepost: "/images/ribeira_sacra_post.png"
 ---
 
 

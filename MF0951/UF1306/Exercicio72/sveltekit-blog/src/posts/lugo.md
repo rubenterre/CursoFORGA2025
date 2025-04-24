@@ -3,7 +3,7 @@ title: "Muralla Romana de Lugo"
 date: "2025-04-22"
 summary: "A muralla romana que rodea a cidade de Lugo é a única do mundo que se conserva enteira."
 image: "/images/lugo.png"
-image-post: "/images/lugo_post.png"
+imagepost: "/images/lugo_post.png"
 
 ---
 

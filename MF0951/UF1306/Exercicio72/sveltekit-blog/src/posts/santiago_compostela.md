@@ -3,7 +3,7 @@ title: "Catedral y Centro Histórico de Santiago"
 date: "2025-04-22"
 summary: "Contén o alento. O Botafumeiro, a 70 km por hora, voa sobre ti. É maxia na catedral de Santiago de Compostela."
 image: "/images/santiago_compostela.png"
-image-post: "/images/santiago_compostela_post.png"
+imagepost: "/images/santiago_compostela_post.png"
 ---
 
 

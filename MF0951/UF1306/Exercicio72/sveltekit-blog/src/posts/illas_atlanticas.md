@@ -3,7 +3,7 @@ title: "Parque Nacional das Illas Atlánticas"
 date: "2025-04-22"
 summary: "Aquí está a mellor praia do mundo. E non o dicimos nós, dío o xornal The Guardian. É a praia de Rodas nas Illas Cíes."
 image: "/images/illas_atlanticas.png"
-image-post: "/images/illas_atlanticas_post.png"
+imagepost: "/images/illas_atlanticas_post.png"
 ---
 
 

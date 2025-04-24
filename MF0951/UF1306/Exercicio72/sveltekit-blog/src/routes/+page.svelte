@@ -45,6 +45,10 @@
 </section>
 
 <style>
+    .blog{
+        max-width: 1318px;
+        margin: 0 auto;
+    }
     .blog__container{
         display: flex;
         justify-content: space-between;

@@ -3,7 +3,7 @@ title: "Torre de Hércules"
 date: "2025-04-22"
 summary: "Símbolo da cidade, faro da Humanidade. Localizada na mesma cidade de A Coruña, no seu paseo marítimo."
 image: "/images/torre_hercules.png"
-image-post: "/images/torre_hercules_post.png"
+imagepost: "/images/torre_hercules_post.png"
 ---
 
 

@@ -2,6 +2,10 @@
 	import Footer from '$lib/components/Footer.svelte';
 </script>
 
+<svelte:head>
+    <title>Blog de Galicia</title>
+    <meta name="description" content="Blog de Galicia" />
+</svelte:head>
 
 <slot></slot>
 

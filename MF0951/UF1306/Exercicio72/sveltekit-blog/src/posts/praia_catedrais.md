@@ -3,7 +3,7 @@ title: "Praia das Catedrais"
 date: "2025-04-22"
 summary: "A praia das Catedrais, un monumento natural cunha dimensión sobrenatural."
 image: "/images/praia_catedrais.png"
-image-post: "/images/praia_catedrais_post.png"
+imagepost: "/images/praia_catedrais_post.png"
 ---
 
 
