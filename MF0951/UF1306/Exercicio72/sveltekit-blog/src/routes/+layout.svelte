@@ -51,6 +51,6 @@
         font-size: 1.3rem;
         font-weight: 400;
         color: var(--color-secondary);
-        line-height: 2rem;
+        line-height: 1.5rem;
     }
 </style>

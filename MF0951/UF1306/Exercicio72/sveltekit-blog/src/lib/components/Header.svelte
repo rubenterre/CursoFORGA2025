@@ -1,6 +1,6 @@
 <header class="header">
     <div class="header__logos">
-        <a href="/">
+        <a class="header__a" href="/">
         <img class="header__logo" src="xunta.svg" alt="Logo Xunta de Galicia">
         <img class="header__logo" src="turismo-logo.svg" alt="Logo de Turismo de Galicia">
         </a>

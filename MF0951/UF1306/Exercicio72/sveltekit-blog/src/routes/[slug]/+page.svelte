@@ -96,12 +96,14 @@
         color: var(--color-dark);
         font-weight: 300;
         margin-bottom: 2rem;
+        line-height: 2rem;
     }
 
     :global(.article__text p:not(first-of-type)){
         font-size: 1rem;
         color: var(--color-dark);
         font-weight: 400;
+        line-height: 1.5rem;
     }
 
 </style>

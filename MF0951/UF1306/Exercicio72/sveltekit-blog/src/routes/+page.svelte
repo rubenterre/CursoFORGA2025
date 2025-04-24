@@ -95,6 +95,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+       
     }
 
     .blog__article:hover{
