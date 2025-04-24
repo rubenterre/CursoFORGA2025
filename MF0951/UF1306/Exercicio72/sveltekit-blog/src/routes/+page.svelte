@@ -92,6 +92,9 @@
         box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.10);
         transition: transform 0.3s;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .blog__article:hover{
