@@ -228,7 +228,7 @@ while (condition) {
 
 
 
-// Funcións en JavasScript
+// Funcións en JavaScript
 
 function sumar(parametros) {
     //Bloque de código que executará la función

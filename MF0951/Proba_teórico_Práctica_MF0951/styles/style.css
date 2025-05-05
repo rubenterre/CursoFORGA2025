@@ -1,0 +1,495 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "EurostileExt-Bold";
+  src: url("./fonts/EurostileExt-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./fonts/Poppins-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("./fonts/Poppins-SemiBold.ttf") format("truetype");
+}
+
+:root {
+  --font-primary: "Poppins-regular", sans-serif;
+  --font-secondary: "Poppins-SemiBold", sans-serif;
+  --font-tertiary: "EurostileExt-Bold", sans-serif;
+  --color-primary: #1d2433;
+  --color-secondary: #ffffff80;
+  --color-tertiary: #b47009;
+  --color-quaternary: #20160c;
+  --color-tertiary-light: #ffdd99;
+  --color-light: #ffffff;
+  --color-dark: #000000;
+  --color-starcraft:#02aeff;
+  --font-size: 14px;
+}
+
+body {
+  background: var(--color-primary);
+  color: var(--color-secondary);
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+  font-size: var(--font-size);
+  font-family: var(--font-primary);
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Decoración da barra superiór en Razas e Novas */
+.main__decoration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 0px;
+}
+
+/* Header */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 72px;
+  z-index: 10;
+  padding: 20px 10%;
+}
+
+.header__mobile {
+  display: none;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  background: var(--color-primary);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  height: 72px;
+  padding: 20px;
+}
+
+.header__container--mobile{
+  display: none;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__a {
+  display: flex;
+  align-items: center;
+  color: var(--color-light);
+  text-decoration: none;
+  font-family: var(--font-tertiary);
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.header__a:hover {
+  color: var(--color-starcraft);
+}
+
+.header__logo {
+  height: 40px;
+}
+
+.header__cta {
+  height: 41px;
+  width: 165px;
+
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  background: var(--color-tertiary);
+  color: var(--color-light);
+  border-radius: 8px;
+  font-family: var(--font-secondary);
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__cta:hover {
+  background: var(--color-light);
+  color: var(--color-quaternary);
+}
+
+/* Hero */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: url("../assets/img/hero_bg.avif") no-repeat center center/cover;
+  height: 100vh;
+}
+
+.hero__content {
+  margin-top: 10%;
+  max-width: 600px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero__logo {
+  width: clamp(300px, 30vw, 600px);
+  margin-bottom: 2rem;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+
+.hero__h1 {
+  font-family: var(--font-tertiary);
+  font-size: clamp(1.2rem, 1.8vw, 2.3rem);
+  color: var(--color-light);
+  margin-bottom: 1rem;
+  text-align: center;
+  width: clamp(300px, 30vw, 600px);
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+}
+
+.hero__btn {
+  margin-top: 10vh;
+  border-radius: 8px;
+  border: 3px solid var(--color-tertiary);
+  background: var(--color-quaternary);
+  color: var(--color-tertiary-light);
+  padding: 0.7rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: var(--font-secondary);
+  font-size: 1.2rem;
+  transition: background 0.3s ease;
+  width: 17rem;
+}
+.hero__btn:hover {
+  animation: aura-move 1.5s infinite ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes aura-move {
+  0% {
+    box-shadow: 0 0 6px 1px rgba(255, 221, 153, 0.2),
+      0 0 12px 3px rgba(255, 221, 153, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 10px 2px rgba(255, 221, 153, 0.3),
+      0 0 20px 5px rgba(255, 221, 153, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 6px 1px rgba(255, 221, 153, 0.2),
+      0 0 12px 3px rgba(255, 221, 153, 0.1);
+  }
+}
+
+/* Razas */
+
+.razas {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../assets/razas/protoss_background_1600_desktop.avif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#razas.animarfondo {
+  animation: fade 2s;
+}
+
+@keyframes fade {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.1; }
+}
+
+.razas__container {
+  max-width: 1679px;
+  margin: 0 auto;
+  padding: 0px 10%;
+}
+
+.razas__h2 {
+  font-family: var(--font-tertiary);
+  font-size: 2.5rem;
+  color: var(--color-light);
+  padding: 5% 0 3rem 0;
+}
+
+.razas__btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 72px;
+}
+
+.razas__icono {
+  width: 72px;
+  height: 72px;
+}
+
+.razas__details {
+  width: 50%;
+  margin-top: 20vh;
+}
+
+.razas__h3 {
+  font-family: var(--font-tertiary);
+  font-size: 2rem;
+  color: var(--color-light);
+  padding: 0 0 1rem 0;
+  text-transform: uppercase;
+}
+
+.razas__p {
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  color: var(--color-light);
+}
+
+/* Novas */
+
+.footer {
+  background: url("../assets/img/footer_bg.avif") no-repeat center center/cover;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer__img {
+  height: 97px;
+}
+.footer__p {
+  color: var(--color-secondary);
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  text-align: center;
+  width: 500px;
+}
+
+.footer__h4 {
+  color: var(--color-light);
+  font-family: var(--font-tertiary);
+  font-size: 1.5rem;
+  text-align: center;
+  width: 500px;
+}
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0px;
+  gap: 2rem;
+}
+.footer__social {
+  height: 32px;
+  transition: all 0.3s ease;
+}
+.footer__social:hover {
+  transform: scale(1.1);
+}
+.footer__credits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.footer__p--credits {
+  color: var(--color-secondary);
+  font-family: var(--font-primary);
+  font-size: 1.3rem;
+  text-align: center;
+  width: 500px;
+}
+
+/* Responsive styles */
+
+@media (max-width: 897px) {
+  .header__cta{
+    height: 41px;
+    width: 80px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    background: var(--color-tertiary);
+    color: var(--color-light);
+    border-radius: 8px;
+    font-family: var(--font-secondary);
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  /* Header */
+
+  .header {
+    padding: 0px;
+  }
+
+  .header__container {
+    display: none;
+  }
+
+  .header__mobile {
+    padding: 0px 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 96px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-primary);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  .header__logo--mobile {
+    height: 55px;
+  }
+
+  .header__button--mobile {
+    background: var(--color-tertiary);
+    color: var(--color-light);
+    border-radius: 8px;
+    padding: 0.5rem;
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    border: 3px solid transparent;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .header__container--mobile{
+    display: none;
+    position: fixed;
+    top: 96px;
+    left: 0px;
+    background: var(--color-primary);
+    padding: 1rem 0px;
+    width: 100vw;
+  }
+
+  .header__nav--mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    padding: 2rem 0px;
+    gap: 3rem;
+  }
+
+  .header__cta--mobile{
+    width: 80%;
+height: 55px;
+background-color: var(--color-tertiary);
+color: var(--color-light);
+border-radius: 8px;
+text-transform: uppercase;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+font-family: var(--font-secondary);
+font-size: 1.3rem;
+margin: 0 auto;
+  }
+
+  /* Razas */
+
+  .razas {
+    background-image: url(../assets/razas/races_protoss_960_mobile.avif);
+  }
+
+  .razas__container {
+    padding: 0px;
+  }
+
+  .razas__contianer--buttons{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .razas__buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+  }
+
+
+  .razas__h2 {
+    font-size: 2rem;
+  }
+  .razas__details {
+    width: 100%;
+    margin-top: 30vh;
+    padding: 0px 2rem;
+  }
+  .razas__h3 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .razas__p {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+}

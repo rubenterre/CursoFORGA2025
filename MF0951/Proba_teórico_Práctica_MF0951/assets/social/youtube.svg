@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="28px" viewBox="0 0 40 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>youtube</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop_Zerg" transform="translate(-970, -2521)" fill="#40AEFF" fill-rule="nonzero">
+            <g id="Footer" transform="translate(0, 2155)">
+                <g id="Creditos" transform="translate(718, 107)">
+                    <g id="social" transform="translate(124, 200.6817)">
+                        <g id="youtube" transform="translate(128, 58.3183)">
+                            <path d="M15.909,19.91 L15.909,8.09 L26.364,14 L15.909,19.91 Z M39.164,4.372 C38.6998803,2.64730765 37.3526924,1.30011969 35.628,0.836 C32.508,0 20,0 20,0 C20,0 7.492,0 4.372,0.836 C2.64730765,1.30011969 1.30011969,2.64730765 0.836,4.372 C0,7.492 0,14 0,14 C0,14 0,20.508 0.836,23.628 C1.30011969,25.3526924 2.64730765,26.6998803 4.372,27.164 C7.492,28 20,28 20,28 C20,28 32.508,28 35.628,27.164 C37.3526924,26.6998803 38.6998803,25.3526924 39.164,23.628 C40,20.508 40,14 40,14 C40,14 40,7.492 39.164,4.372" id="Forma"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

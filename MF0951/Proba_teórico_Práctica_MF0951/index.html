@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <title>Proba teórico-práctica - MF0951</title>
+    <meta name="description" content="Proba teórico-práctica - MF0951 do certificado de profesionalidadde IFCD0110 - Confección e publicación de páxinas web.">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+<!-- Header -->
+
+<header class="header">
+    <div class="header__container">
+      <nav class="header__nav">
+        <a href="/" class="header__a"> 
+          <img
+            src="./assets/blizzard_logo.svg"
+            alt="Logo de Blizzard"
+            class="header__logo"
+            height="40px"
+          />
+        </a>
+        <a href="" class="header__a">
+          <img
+            src="./assets/sc_logo.svg"
+            alt="Logo de Starcraft II"
+            class="header__logo header__logo--sc"
+            height="40px"
+          />
+        </a>
+        <a href="#hero" class="header__a">Resumen</a>
+        <a href="#razas" class="header__a">Razas</a>
+        <a href="#novas" class="header__a">Novas</a>
+      </nav>
+      
+        <a href="#" class="header__cta"> Xogar agora </a>
+     
+    </div>
+
+    <div class="header__mobile">
+        <div class="header__mobile--menu">
+          <button class="header__button--mobile" onclick="toggleMenu()">
+            <img
+            src="./assets/menu_icon.svg"
+            alt="Icono de menú"
+            class="header__menu--icon"
+            />
+          </button>
+
+        </div>
+        <div class="header__mobile--logo">
+            <img
+            src="./assets/sc_logo.svg"
+            alt="Logo de Blizzard"
+            class="header__logo--mobile"
+            height="55px"
+            />
+        </div>
+    </div>
+    <div class="header__container--mobile" id="headerContainerMobile">
+      <nav class="header__nav--mobile">
+        <a href="#hero" class="header__a">Resumen</a>
+        <a href="#razas" class="header__a">Razas</a>
+        <a href="#novas" class="header__a">Novas</a>
+      </nav>
+      <a href="#" class="header__cta--mobile"> Xogar agora </a>
+    </div>
+
+  </header>
+    <!-- Header -->
+
+<!-- Hero Section -->
+
+    
+<section id="hero" class="hero">
+    <div class="hero__content">
+  
+      <img
+        src="./assets/img/logo_starcraft2.avif"
+        alt="Logo de Starcraft II"
+        class="hero__logo"
+        decoding="async"
+        loading="lazy"
+      />
+      <h1 class="hero__h1">O XOGO DE ESTRATEXIA EN TEMPO REAL DEFINITIVO</h1>
+      <a href="#" class="hero__btn">XOGAR AGORA</a>
+    </div>
+  </section>
+
+    <!-- Hero Section -->
+
+<!-- Razas Section -->
+<section
+id="razas"
+class="razas">
+<div class="razas__container">
+  <div class="main__decoration">
+    <img
+      src="./assets/section_divider_desktop.avif"
+      alt="Decoración de sección na parte superior"
+      class="main__decoration"
+    />
+  </div>
+  <div class="razas__contianer--buttons">
+    <h2 class="razas__h2">RAZAS</h2>
+      <div class="razas__buttons">
+        <button class="razas__btn" onclick="cargarRaza('Protoss')">
+          <img id="iconoProtoss"
+            class="razas__icono"
+            src="./assets/icons/protoss_icon_active.avif"
+          />
+        </button>
+        <button class="razas__btn" onclick="cargarRaza('Terran')">
+          <img id="iconoTerran"
+            class="razas__icono"
+            src="./assets/icons/terran_icon_default.avif"
+          />
+        </button>
+        <button class="razas__btn" onclick="cargarRaza('Zerg')">
+          <img id="iconoZerg"
+            class="razas__icono"
+            src="./assets/icons/zerg_icon_default.avif"
+          />
+        </button>
+      </div>
+      
+  </div>
+  
+  
+    <div class="razas__details">
+      <h3 id="titleRaza" class="razas__h3">PROTOSS</h3>
+      <p id="descriptionRaza" class="razas__p">Durante milleiros de anos, os antigos e misteriosos protoss dominaron a súa parte da galaxia. Os guerreiros protoss non teñen igual en destreza e valor, grazas á combinación da tecnoloxía coa súa formidable forza psiónica.</p>
+    </div>
+</div>
+</section>
+
+<!-- Razas Section -->
+
+<!-- Novas Section -->
+<footer id="novas" class="footer">
+    
+    <div class="footer__container">
+      <div class="main__decoration">
+          <img
+            src="./assets/section_divider_desktop.avif"
+            alt="Decoración de sección na parte superior"
+            class="main__decoration"
+          />
+        </div>
+  
+      <div class="footer__logo">
+        <img
+          src="./assets/blizzard_logo.svg"
+          alt="Logo de Blizzard"
+          class="footer__img"
+        />
+      </div>
+      <p class="footer__p">
+        Todas as marcas comerciais ás que se fai referencia son propiedade dos
+        seus respectivos donos
+      </p>
+      <div class="footer__novas">
+        <h4 class="footer__h4">MANTENTE AO DÍA</h4>
+           <div class="footer__socials">
+              <a href="https://www.x.com/starcartf" target="_blank">
+                  <img
+                    src="./assets/social/X.svg"
+                    alt="X (Twitter)"
+                    class="footer__social"
+                  />
+                </a>
+          <a href="https://www.facebook.com/StarCraft" target="_blank">
+            <img
+              src="./assets/social/facebook.svg"
+              alt="Facebook"
+              class="footer__social"
+            />
+          </a>
+  
+            <a href="" target="_blank">
+              <img
+                src="./assets/social/youtube.svg"
+                alt="Youtube"
+                class="footer__social"
+              />
+            </a>
+            <a href="" target="_blank">
+              <img
+                src="./assets/social/twitch.svg"
+                alt="Twitch"
+                class="footer__social"
+              />
+            </a>
+           </div>
+           <div class="footer__credits">
+              <p class="footer__p--credits">©2025 Blizzard Entertainment, Inc.</p>
+           </div>
+      </div>
+    </div>
+  </footer>
+    <!-- Novas Section -->
+
+    <script src="./js/razas.js"></script>
+</body>
+</html>
