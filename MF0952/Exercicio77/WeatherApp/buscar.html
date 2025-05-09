@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 60 - Buscador de cidades</title>
+    <link rel="stylesheet" href="./styles/bulma.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body class="buscar">
+    <header>
+        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item has-text-weight-bold" href="index.html">
+                AmesWeather
+              </a>
+          
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start">
+                <a class="navbar-item" onclick="actualizarDatos(42.84,-8.57)">
+                  O Milladoiro
+                </a>
+          
+                <a class="navbar-item" onclick="actualizarDatos(42.85, -8.65)">
+                  Bertamiráns
+                </a>
+              </div>
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <div class="buttons">
+                   
+                    <a class="button is-light" href="buscar.html">
+                      Buscar cidade
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <div class="container">
+            
+            <div class="field buscador mx-3">
+                <label class="label">Buscar cidade</label>
+                <div class="control">
+                  <input id="city" class="input" type="text" placeholder="Escribe o nome dunha cidade">
+                </div>
+              </div>
+           
+            <div class="field mx-3">
+                <div class="control">
+                    <button id="botonBuscar" class="button is-light">Buscar</button>
+                  </div>
+            </div>
+       
+        </div>
+    </header>
+<main>
+<div class="container">
+    <div class="columns is-multiline pt-3 px-3" id="resultado">
+    
+  
+      
+    </div>
+</div>
+
+
+</main>
+
+    <footer class="footer mt-4">
+        <p class="footer__p has-text-centered">
+            AmesWeather - 2025 - Tódolos dereitos reservados
+        </p>
+    </footer>
+    <script src="./js/buscar.js"></script>
+    <script src="./js/navbar.js"></script>
+</body>
+</html>
