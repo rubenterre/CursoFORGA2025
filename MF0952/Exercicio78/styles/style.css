@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url(./fonts/Poppins-Bold.ttf);
+}
+
+
+:root{
+    --font-primary: 'Poppins-Regular';
+    --font-secondary: 'Poppins-Bold';
+    --color-primary: #FFFFFF;
+    --color-secondary: #0CAEA5;
+    --color-tertiary: #ADADAD;
+    --font-size-base: 14px;
+}
+
+body {
+ background: linear-gradient(#000000D9,#000000D9), url(../assets/img/Gozo25-fondo.png);
+ color: var(--color-primary);
+ -webkit-font-smoothing: antialiased;
+ height: 100vh;
+ width: 100vw;
+}
+
+body, input, button {
+ font-size: var(--font-size-base);
+ font-family: var(--font-primary);
+}
+
+button {
+ cursor: pointer;
+}
+
+/* Header */
+
+.header{
+    padding: 2rem 3rem;
+    width: 100vw;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__button{
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    border-radius: 0px;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 25px;
+}
+
+.header__button:hover{
+    background-color: var(--color-primary);
+
+    .header__p{
+        color: black;
+    }
+
+    .header__icon{
+        filter: invert(1);
+    }
+}
+
+.header__p{
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    color: var(--color-primary);
+}
+
+/* Main */
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.details__h1{
+    font-family: var(--font-secondary);
+    font-size: clamp(1rem, 3rem, 5rem);
+    color: var(--color-primary);
+}
+
+.details__h4{
+    font-family: var(--font-primary);
+    font-size: clamp(0.5rem, .8rem, 2rem);
+    color: var(--color-tertiary);
+}
+
+.details__a{
+    max-width: 350px;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    border: 3px solid var(--color-secondary);
+    text-align: center;
+    padding: .6rem 3rem;
+    font-family: var(--font-secondary);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.details__a:hover{
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border: 3px solid var(--color-primary);
+}
+
+.details__finalcountdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.details__time{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details__h3{
+    font-family: var(--font-secondary);
+    font-size: 2.5rem;
+}
+
+.details__p{
+    font-family: var(--font-primary);
+    color: var(--color-tertiary);
+    font-size: .8rem;
+}
+
+.cartel__img{
+    max-width: 464px;
+    padding: 2rem 3rem;
+}
+
+/* Footer */
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 2rem 3rem;
+}
+
+.footer__p{
+    font-family: var(--font-primary);
+    color: var(--color-tertiary);
+    font-size: .8rem;
+}
+
+/* Modal */
+
+.show{
+    display: block!important;
+}
+
+#modal{
+    display: none;
+}
+
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+     background: linear-gradient(#000000D9,#000000D9), url(../assets/img/Gozo25-fondo.png);
+    box-shadow: 0px 4px 4px 0px rgba(185, 185, 185, 0.25);
+    padding: 4rem;
+    width: 755px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    animation: fade 1s linear;
+}
+
+.modal__form{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#email{
+    width: 417px;
+    height: 78px;
+    background-color: #FFFFFF1A; 
+    padding: 0.5rem 1rem;  
+
+::placeholder{
+    color: var(--color-tertiary);
+    font-family: var(--font-primary);
+    font-size: .8rem;
+}
+
+}
+
+.modal__a{
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+
+.show{
+    display: block;
+}
+
+/* Responsive */
+
+@media screen and (max-width:768px){
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 3rem;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    
+}

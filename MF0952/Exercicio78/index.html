@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="gl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio78</title>
+    <meta
+      name="description"
+      content="Este é un exercicio dunha landing page para un festival"
+    />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <a href="index.html" class="header__a">
+          <img
+            src="./assets/oGozo-logo.png"
+            alt="Logo de O Gozo Festival 2025"
+          />
+        </a>
+        <button id="submit" class="header__button">
+          <img
+            class="header__icon"
+            src="./assets/icons/campana_icon.svg"
+            alt="Icona de campá"
+          />
+          <p class="header__p">Avísame</p>
+        </button>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="details">
+        <h1 class="details__h1">Próximamente</h1>
+        <h4 class="details__h4">
+          CICLO DE CONCIERTOS INTERNACIONALES EN GALICIA
+        </h4>
+        <a
+          class="details__a"
+          href="http://"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          MERCAR ENTRADAS
+        </a>
+        <div class="details__finalcountdown">
+          <div class="details__time">
+            <h3 id="days" class="details__h3">14</h3>
+            <p class="details__p">Días</p>
+          </div>
+          <div class="details__separator">
+            <img
+              src="./assets/icons/separator.svg"
+              alt="Separador de 2 puntos entre os números"
+            />
+          </div>
+          <div class="details__time">
+            <h3 id="hours" class="details__h3">07</h3>
+            <p class="details__p">Horas</p>
+          </div>
+          <div class="details__separator">
+            <img
+              src="./assets/icons/separator.svg"
+              alt="Separador de 2 puntos entre os números"
+            />
+          </div>
+          <div class="details__time">
+            <h3 id="minutes" class="details__h3">45</h3>
+            <p class="details__p">Minutos</p>
+          </div>
+          <div class="details__separator">
+            <img
+              src="./assets/icons/separator.svg"
+              alt="Separador de 2 puntos entre os números"
+            />
+          </div>
+          <div class="details__time">
+            <h3 id="seconds" class="details__h3">19</h3>
+            <p class="details__p">Segundos</p>
+          </div>
+        </div>
+      </section>
+      <section class="cartel">
+        <img
+          class="cartel__img"
+          src="./assets/img/david-guetta.jpg"
+          alt="Cartel do festival O Gozo Festival 2025"
+        />
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__copyright">
+        <p class="footer__p">Copyright 2023 © LIVE NATION ESPAÑA, S.A.U.</p>
+      </div>
+      <div class="footer__social">
+        <a
+          class="footer__a"
+          href="http://"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="./assets/icons/yt_icon.svg" alt="Icono de YouTube" />
+        </a>
+        <a
+          class="footer__a"
+          href="http://"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="./assets/icons/fb_icon.svg" alt="Icono de Facebook" />
+        </a>
+        <a
+          class="footer__a"
+          href="http://"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="./assets/icons/ig_icon.svg" alt="Icono de Instagram" />
+        </a>
+      </div>
+    </footer>
+
+    <div id="modal">
+      <div class="modal">
+        <form class="modal__form" action="contact.php" method="post">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Introduce o teu email aquí"
+          />
+          <button id="submit" type="submit" class="header__button">
+            <img
+              class="header__icon"
+              src="./assets/icons/campana_icon.svg"
+              alt="Icona de campá"
+            />
+            <p class="header__p">Avísame</p>
+          </button>
+        </form>
+        <p class="modal__p">
+          Ao suscribirte, aceptas as nosas
+          <a
+            class="modal__a"
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            >políticas de privacidade</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
