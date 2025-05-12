@@ -19,7 +19,7 @@ if (trim($email_contact) == '') {
     exit();
 }
 
-$address = "info@exemplo.com";
+$address = "info@rubenterre.com";
 
 // Email subject
 $e_subject = 'Nuevo contacto desde el formulario';
@@ -38,7 +38,7 @@ $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
 
 $user = "$email_contact";
 $usersubject = "Gracias por contactarnos";
-$userheaders = "From: info@exemplo.com\n";
+$userheaders = "From: info@rubenterre.com\n";
 $usermessage = "Gracias por contactar con nosotros. Te responderemos lo antes posible.";
 
 mail($user, $usersubject, $usermessage, $userheaders);
@@ -50,5 +50,6 @@ if (mail($address, $e_subject, $msg, $headers)) {
     echo "Gracias, tu mensaje ha sido enviado correctamente. Te contactaremos lo antes posible.";
     echo "</div>";
 } else {
+    error_log("Error al enviar el correo a $address");
     echo 'ERROR!';
 }

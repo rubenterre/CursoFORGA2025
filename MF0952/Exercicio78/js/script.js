@@ -1,5 +1,5 @@
 // Data do evento
-const countDownDate = new Date('2025-06-06T23:59:59').getTime();
+const countDownDate = new Date('2025-06-06T16:00:00').getTime();
 
 function updateCountdown() {
     const now = new Date().getTime();

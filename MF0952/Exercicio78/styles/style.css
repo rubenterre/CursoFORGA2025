@@ -100,11 +100,15 @@ button {
     align-items: center;
     flex-direction: column;
     gap: 2rem;
+    background-image: url(../assets/icons/circleElement.svg);
+    background-size: 62px;
+    background-repeat: no-repeat;
+    background-position: top right;
 }
 
 .details__h1{
     font-family: var(--font-secondary);
-    font-size: clamp(1rem, 3rem, 5rem);
+    font-size: clamp(1rem, 4rem, 8rem);
     color: var(--color-primary);
 }
 
@@ -202,30 +206,38 @@ button {
     justify-content: center;
     flex-direction: column;
     animation: fade 1s linear;
+    border: 2px solid white;
 }
 
 .modal__form{
     display: flex;
     margin-bottom: 10px;
+    width: 100%;
 }
 
-#email{
-    width: 417px;
+#email_contact{
+    width: 80%;
     height: 78px;
     background-color: #FFFFFF1A; 
     padding: 0.5rem 1rem;  
+}
 
-::placeholder{
+#email_contact::placeholder{
     color: var(--color-tertiary);
     font-family: var(--font-primary);
     font-size: .8rem;
 }
 
-}
-
 .modal__a{
     color: var(--color-secondary);
     text-decoration: none;
+}
+
+.submit{
+    background-color: var(--color-secondary);
+    width: 180px;
+    border: 0px;
+    text-transform: uppercase;
 }
 
 .show{
