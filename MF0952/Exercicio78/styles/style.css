@@ -53,6 +53,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
 }
 
 .header__button{
@@ -108,7 +109,7 @@ button {
 
 .details__h1{
     font-family: var(--font-secondary);
-    font-size: clamp(1rem, 4rem, 8rem);
+    font-size: clamp(2rem, 5rem, 6rem);
     color: var(--color-primary);
 }
 
@@ -247,6 +248,26 @@ button {
 /* Responsive */
 
 @media screen and (max-width:768px){
+
+.modal{
+    width: 100%;
+    height: 40%;
+}
+
+.modal__form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#email_contact{
+    width: 100%;
+}
+
+.submit{
+    width: 100%;
+    justify-content: center;
+}
 
 .main{
     display: flex;
